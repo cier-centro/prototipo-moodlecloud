@@ -1,6 +1,6 @@
 //Establece la diapositiva inicial del cargador
 var slideIndex2 = [
-  [], 13
+  [], 14
 ];
 //Establece si ocultar la barra de control principal
 var hideControlsStates = true;

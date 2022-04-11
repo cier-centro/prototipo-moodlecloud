@@ -644,6 +644,56 @@ body {
 }
 
 /*----------------------------------
+-------------Radio-Activity---------
+------------------------------------*/
+.radio-activity .radio-group-options .custom-radio {
+  cursor: pointer;
+}
+.radio-activity .radio-group-options .custom-radio label {
+  padding: 1em;
+  margin-bottom: 0;
+}
+.radio-activity .radio-group-options .custom-radio label .letter::before {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.radio-activity .radio-group-options .custom-radio label p {
+  margin-bottom: 0;
+}
+.radio-activity .radio-group-options .custom-radio:nth-child(1) .letter::before {
+  content: "A";
+}
+.radio-activity .radio-group-options .custom-radio:nth-child(2) .letter::before {
+  content: "B";
+}
+.radio-activity .radio-group-options .custom-radio:nth-child(3) .letter::before {
+  content: "C";
+}
+.radio-activity .radio-group-options .custom-radio:nth-child(4) .letter::before {
+  content: "D";
+}
+.radio-activity .radio-group-options .custom-radio:nth-child(5) .letter::before {
+  content: "E";
+}
+.radio-activity .radio-group-options .custom-radio:nth-child(6) .letter::before {
+  content: "F";
+}
+.radio-activity .radio-group-options .custom-radio input {
+  width: 1.3em;
+  height: 1.3em;
+}
+.radio-activity .radio-group-options .custom-radio input:disabled ~ .custom-control-label {
+  opacity: 0.8;
+}
+
+/*----------------------------------
 ----------------Buttons--------------
 ------------------------------------*/
 .btn {
