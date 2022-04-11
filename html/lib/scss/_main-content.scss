@@ -1,0 +1,15 @@
+/*----------------------------------
+-------------Main content-----------
+------------------------------------*/
+
+.main-content{
+    main{
+        &.content{
+            .pdf-container{
+                border-radius: 1em;
+                background-color: $light-inv;
+                padding: 1em;
+            }
+        }
+    }
+}

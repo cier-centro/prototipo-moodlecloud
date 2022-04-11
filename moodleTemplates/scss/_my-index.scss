@@ -1,0 +1,329 @@
+/*----------------------------------
+------------page-site-index---------
+------------------------------------*/
+.theme-snap{
+    &#page-my-index{
+        #page{
+            #page-content{
+                #moodle-page{
+                    #region-main{
+
+                        .pagination{
+                            .icon{
+                                &::before{
+                                    color: $blue-site;
+                                }
+                            }
+                        }
+
+                        .snap-page-heading-button{
+                            margin-top: 1.5rem;
+                            margin-right: 0.5rem;
+                            @media (min-width: 768px) {
+                                margin-top: 1rem;
+                                margin-right: 1rem;
+                            }
+                        }
+
+                        div[role=main]{
+                            margin-top: 4rem;
+
+                            .block-region{
+                                .block_recentlyaccessedcourses{
+                                    .card-body{
+                                        overflow-x: hidden;
+
+                                        .card-title{
+                                            font-family: 'museosans-900';
+                                            padding-left: 1.5rem;
+                                            position: relative;
+                                            color: $blue-site;
+
+                                            &::before{
+                                                content: "";
+                                                width: 1.2rem;
+                                                height: 1.2rem;
+                                                background: url("#{$images-path}icon_clock.svg") no-repeat center center/contain;
+                                                margin-left: -1.5rem;
+                                                position: absolute;
+                                                top: 0.1rem;
+                                            }
+                                            @media (min-width: 768px) {
+                                                &::after{
+                                                    content: "";
+                                                    background-color: $blue-site;
+                                                    top: 50%;
+                                                    margin: 0 1rem;
+                                                    position: absolute;
+                                                    height: 0.1rem;
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+
+                                        .card-text{
+                                            .block-recentlyaccessedcourses{
+                                                .dashboard-card-deck{
+                                                    overflow: inherit !important;
+
+                                                    .dashboard-card{
+                                                        box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
+                                                        border-radius: 0.5rem;
+                                                        border: none;
+
+                                                        a{
+                                                            margin: 0;
+                                                            border-radius: 0.5rem;
+                                                            .dashboard-card-img{
+                                                                border-radius: 0.5rem  0.5rem 0 0;
+                                                            }
+                                                        }
+
+                                                        .course-info-container{
+                                                            .text-muted{
+                                                                font-family: 'museosans-300';
+                                                                color: $blue-site !important;
+                                                            }
+
+                                                            .coursename{
+                                                                span{
+                                                                    font-family: 'museosans-900';
+                                                                    .icon{
+                                                                        color: $yellow-site !important;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .block_myoverview{
+                                    .card-body{
+                                        overflow-x: hidden;
+
+                                        .card-title{
+                                            font-family: 'museosans-900';
+                                            padding-left: 1.5rem;
+                                            position: relative;
+                                            color: $blue-site;
+                                            display: block !important;
+
+                                            &::before{
+                                                content: "";
+                                                width: 1.2rem;
+                                                height: 1.2rem;
+                                                background: url("#{$images-path}icon_bookmark.svg") no-repeat center center/90%;
+                                                margin-left: -1.5rem;
+                                                position: absolute;
+                                            }
+
+                                            @media (min-width: 768px) {
+                                                &::after{
+                                                    content: "";
+                                                    background-color: $blue-site;
+                                                    top: 50%;
+                                                    margin: 0 1rem;
+                                                    position: absolute;
+                                                    height: 0.1rem;
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+
+                                        .card-text{
+                                            .block-myoverview{
+                                                .dropdown{
+
+                                                    #groupingdropdown,
+                                                    #sortingdropdown,
+                                                    #displaydropdown{
+                                                        border: solid 2px $blue-site !important;
+                                                        .icon{
+                                                            color: $blue-site;
+                                                        }
+
+                                                        &:hover,
+                                                        &:focus{
+                                                            .icon{
+                                                                color: $white;
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .dropdown-item{
+                                                        font-family: 'museosans-300';
+                                                    }
+                                                }
+
+                                                .container-fluid{
+                                                    margin-top: 0.5rem;
+
+                                                    .paged-content-page-container{
+
+                                                        .dashboard-card-deck{
+                                                            .dashboard-card{
+                                                                box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
+                                                                border-radius: 0.5rem;
+                                                                border: none;
+
+                                                                a{
+                                                                    margin: 0;
+                                                                    border-radius: 0.5rem;
+                                                                    .dashboard-card-img{
+                                                                        border-radius: 0.5rem  0.5rem 0 0;
+                                                                    }
+                                                                }
+
+                                                                .course-info-container{
+                                                                    .text-muted{
+                                                                        font-family: 'museosans-100';
+                                                                        color: $blue-site !important;
+                                                                    }
+
+                                                                    .coursename{
+                                                                        span{
+                                                                            font-family: 'museosans-900';
+                                                                            .icon{
+                                                                                color: $yellow-site !important;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                .dashboard-card-footer{
+                                                                    .progress{
+                                                                        background-color: $gray !important;
+                                                                        border-radius: 50rem;
+
+                                                                        .progress-bar{
+                                                                            background-color: $orange-site;
+                                                                        }
+                                                                    }
+
+                                                                    .small{
+                                                                        font-family: 'museosans-300';
+
+                                                                        strong{
+                                                                            font-family: 'museosans-700';
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .course-summaryitem{
+                                                            box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
+                                                            border-radius: 0.5rem;
+                                                            border: none;
+                                                            @media (min-width: 992px) {
+                                                                padding: 1rem !important;
+                                                            }
+                                                            .text-muted{
+                                                                font-family: 'museosans-100';
+                                                                color: $blue-site !important;
+                                                            }
+
+                                                            .coursename{
+                                                                font-family: 'museosans-900';
+                                                                span{
+                                                                    font-family: 'museosans-900';
+                                                                    .icon{
+                                                                        color: $yellow-site !important;
+                                                                    }
+                                                                }
+                                                                h6{
+                                                                    font-family: 'museosans-900' !important;
+                                                                    color: $blue-site !important;
+                                                                }
+                                                            }
+
+                                                            .summary{
+                                                                font-family: 'museosans-100';
+                                                            }
+
+                                                            .progress{
+                                                                background-color: $gray !important;
+                                                                border-radius: 50rem;
+
+                                                                .progress-bar{
+                                                                    background-color: $orange-site;
+                                                                }
+                                                            }
+
+                                                            .small{
+                                                                font-family: 'museosans-300';
+
+                                                                strong{
+                                                                    font-family: 'museosans-700';
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .course-listitem{
+                                                            box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
+                                                            border-radius: 0.5rem;
+                                                            border: none;
+                                                            margin-bottom: 0.5em;
+                                                            @media (min-width: 992px) {
+                                                                padding: 1rem !important;
+                                                            }
+                                                            .text-muted{
+                                                                font-family: 'museosans-100';
+                                                                color: $blue-site !important;
+                                                            }
+
+                                                            .coursename{
+                                                                font-family: 'museosans-900';
+                                                                span{
+                                                                    font-family: 'museosans-900';
+                                                                    .icon{
+                                                                        color: $yellow-site !important;
+                                                                    }
+                                                                }
+                                                                h6{
+                                                                    color: $blue-site !important;
+                                                                }
+                                                            }
+
+                                                            .summary{
+                                                                font-family: 'museosans-100';
+                                                            }
+
+                                                            .progress{
+                                                                background-color: $gray !important;
+                                                                border-radius: 50rem;
+
+                                                                .progress-bar{
+                                                                    background-color: $orange-site;
+                                                                }
+                                                            }
+
+                                                            .small{
+                                                                font-family: 'museosans-300';
+
+                                                                strong{
+                                                                    font-family: 'museosans-700';
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #moodle-blocks{
+                        padding: 4%;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,329 @@
+/*----------------------------------
+----------------Login---------------
+------------------------------------*/
+.theme-snap{
+    &.notloggedin {
+        &.snap-pm-open{
+            .snap-pm-login-form{
+                background: $orange-site-semilight url("#{$images-path}img_bg_lines.svg") no-repeat 0 center/cover !important;
+                @media (min-width: 1200px) {
+                    background: $white url("#{$images-path}img_login_bg.png") no-repeat center/cover !important;
+                }
+
+                #snap-pm-header{
+                    background: $white !important;
+                    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba($blue-site-semilight,0.3);
+                    padding: 2% 2% 5% 5%;
+                    @media (min-width: 768px) {
+                        padding: 2%;
+                    }
+                    &::before{
+                        background: none !important;
+                        height: 0 !important;
+                    }
+
+                    h1{
+                        color: transparent !important;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            background: url("#{$images-path}img_idep_logo.svg") no-repeat 0 center/contain;
+                            width: 100%;
+                            height: 60px;
+                            position: absolute;
+                            top: 0%;
+                        }
+                    }
+
+                    #snap-pm-close{
+                        font-family: 'museosans-300' !important;
+                        padding: 0;
+                        color: $blue-site !important;
+                        position: relative;
+                        z-index: 1;
+
+                        &::before{
+                            background: $blue-site url("#{$images-path}icon_close.svg") no-repeat 50% 50% /50%;
+                            box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
+                            padding: 1rem;
+                            border-radius: 50rem;
+                            margin-bottom: 0.5rem;
+                        }
+
+                        &:hover{
+                            color: $orange-site !important;
+                            &::before{
+                                background-color: $orange-site !important;
+                            }
+                        }
+                    }
+                }
+
+                .snap-pm-section{
+                    @media (min-width: 1200px) {
+                        padding: 0 5%;
+                        float: right;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            background: url("#{$images-path}img_idep_logo_cover.svg") no-repeat center center/contain;
+                            width: 100%;
+                            height: 300px;
+                            position: absolute;
+                            left: -100%;
+                            top: 0%;
+                        }
+                    }
+
+                    @media (min-width: 1400px) {
+                        padding: 0 10%;
+                        &::before{
+                            left: -85%;
+                        }
+                    }
+
+                    @media (min-width: 1800px) {
+                        padding-right: 15%;
+                    }
+
+                    .snap-pm-content{
+                        padding: 1rem;
+                        border-radius: 0.2rem;
+                        background: $white url("#{$images-path}img_login_bg_lines.svg") no-repeat 100% /contain;
+                        box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
+                        margin: 0;
+                        width: 80vw;
+                        @media (min-width: 768px) {
+                            width: 25em;
+                        }
+
+                        form{
+                            label[for=username],
+                            label[for=password]{
+                                color: $blue-site-semilight;
+                                padding-left: 1.5rem;
+                                position: relative;
+                                &::before{
+                                    content: "";
+                                    width: 1.2rem;
+                                    height: 1.2rem;
+                                    background: url("#{$images-path}icon_user.svg") no-repeat center/contain;
+                                    position: absolute;
+                                    margin-left: -1.5rem;
+                                    background-position: center;
+                                    background-position-y: bottom;
+                                    margin-top: -0.1rem;
+                                }
+                            }
+
+                            label[for=password]{
+                                &::before{
+                                    background: url("#{$images-path}icon_password.svg") no-repeat center/contain;
+                                }
+                            }
+
+                            input[name="username"],
+                            input[name="password"]{
+                                border: 0.2rem solid $blue-site-light;
+                                color: $blue-site-semilight;
+                                font-family: 'museosans-500' !important;
+                                border-radius: 0.2rem;
+                            }
+
+                            .btn{
+                                &.btn-primary{
+                                    width: 50% !important;
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #snap-pm-login-help{
+
+                    bottom: 1rem !important;
+
+                    .btn{
+
+                        &.btn-primary{
+                            background-color: transparent !important;
+                            color: $blue-site !important;
+                            box-shadow: unset;
+
+                            &:hover{
+                                outline: unset !important;
+                                text-decoration: underline;
+                            }
+                            @media (min-width: 768px) {
+                                background-color: $white !important;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    &#page-login-index{
+        #mr-nav{
+            #snap-header{
+                #snap-home{
+                    max-width: 100%;
+                    height: 60px;
+                    margin: 0 auto;
+                    @media (min-width: 768px) {
+                        max-width: 100%;
+                        margin: unset;
+                    }
+                }
+            }
+        }
+
+        #page{
+            background: $orange-site-semilight url("#{$images-path}img_bg_lines.svg") no-repeat 100% center/cover;
+            @media (min-width: 1200px) {
+                background: $white url("#{$images-path}img_login_bg.png") no-repeat center/cover;
+            }
+
+            #page-content{
+                #moodle-page{
+                    #page-header{
+                        min-height: 0;
+                        background: unset !important;
+                        box-shadow: none !important;
+                        padding: 2% 2% 4% 4% !important;
+                        &::before{
+                            background: none !important;
+                        }
+                    }
+                    #region-main{
+                        background: unset;
+                        &::before{
+                            background: unset;
+                        }
+                        &::after{
+                            background: unset;
+                        }
+                        div[role=main]{
+                            @media (min-width: 1200px) {
+                                float: right;
+                                position: relative;
+
+                                &::before{
+                                    content: '';
+                                    background: url("#{$images-path}img_idep_logo_cover.svg") no-repeat center center/contain;
+                                    width: 100%;
+                                    height: 300px;
+                                    position: absolute;
+                                    left: -125%;
+                                    top: 30%;
+                                }
+                            }
+
+                            @media (min-width: 1800px) {
+                                padding-right: 15%;
+                            }
+
+                            .snap-login-row{
+                                margin: 0;
+
+                                .snap-login{
+                                    border-radius: 0.2rem;
+                                    background: $white url("#{$images-path}img_login_bg_lines.svg") no-repeat 40% 70%/45%;
+                                    box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
+                                    @media (min-width: 1200px) {
+                                        background-position-y: top;
+                                        background-position-x: 50%;
+                                        background-size: 45%;
+                                    }
+
+                                    .snap-logo-sitename{
+                                        display: none;
+                                    }
+
+                                    .snap-custom-form{
+                                        @media (min-width: 1200px) {
+                                            margin-top: 1rem;
+                                        }
+
+                                        input[name="username"],
+                                        input[name="password"]{
+                                            border: 0.2rem solid $blue-site-light;
+                                            color: $blue-site-semilight;
+                                            font-family: 'museosans-500' !important;
+                                            border-radius: 0.2rem;
+
+                                            &::placeholder{
+                                                color: $blue-site-semilight;
+                                            }
+                                        }
+
+                                        .btn{
+                                            &.btn-primary{
+                                                width: 50% !important;
+                                                float: right;
+                                            }
+
+                                            &.btn-link{
+                                                float: right;
+                                                text-align: end;
+                                            }
+                                        }
+                                    }
+
+                                    &.snap-login-cell{
+                                        margin: 2em 0 0 0;
+                                    }
+                                }
+                            }
+
+                            .snap-login{
+                                &.snap-login-box{
+                                    margin: 0.5em auto;
+                                    background-color: $white;
+                                    border-radius: 0.2rem;
+                                    box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
+
+                                    h5{
+                                        color: $blue-site-semilight;
+                                        font-family: 'museosans-300';
+                                    }
+
+                                    .snap-login-instructions{
+
+                                        .iconhelp{
+
+                                            .icon{
+                                                background-color: $blue-site;
+                                                border: unset;
+                                                border-color: $blue-site;
+                                                height: 24px;
+                                                width: 24px;
+                                                transition: all 0.4s ease-in-out;
+                                            }
+                                            &:hover{
+
+
+                                                .icon{
+                                                    background-color: $orange-site;
+                                                    border-color: $orange-site;
+
+                                                }
+                                            }
+
+                                        }
+
+
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

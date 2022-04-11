@@ -1,0 +1,115 @@
+/*----------------------------------
+--------Course-contents-snap--------
+------------------------------------*/
+.theme-snap{
+    &.layout-course{
+        #page{
+            #page-content{
+                #moodle-page{
+                    #page-header{
+
+                        .breadcrumb-nav{
+                            .breadcrumb{
+                                border: unset;
+                                .breadcrumb-item{
+                                    a{
+                                        color: $blue-site;
+                                        text-shadow: none;
+                                    }
+
+                                    &::before{
+                                        color: $blue-site;
+                                        text-shadow: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        #page-mast{
+                            text-align: center;
+
+                            h1{
+                                color: $blue-site;
+                                position: relative;
+                                padding-top: 50px;
+                                margin-top: 1em;
+                                a{
+                                    color: $blue-site;
+                                }
+                            }
+
+                            #course-toc{
+                                background-color: $orange-site-dark;
+                                text-align: left;
+                                position: relative;
+
+                                #toc-desktop-menu-heading{
+                                    color: $white;
+
+                                    &::before{
+                                        content: "";
+                                        width: 1.2rem;
+                                        height: 1.2rem;
+                                        background: url("#{$images-path}icon_content_white.svg") no-repeat center center/contain;
+                                        margin-left: -1.5rem;
+                                        position: absolute;
+                                    }
+                                }
+
+                                #toc-search{
+                                    &::before{
+                                        background: transparent url("#{$images-path}icon_search_white.svg") no-repeat 50% 50%;
+                                    }
+                                }
+
+                                #chapters{
+                                    .snap-visible-section{
+                                        .chapter-title{
+                                            background-color: $white;
+                                            color: $blue-site;
+                                            border-radius: 0.5rem;
+                                            padding-left: 0.5rem;
+                                            margin-bottom: 0rem;
+                                        }
+                                    }
+
+                                    li{
+                                        &::marker{
+                                            color: $white;
+                                            font-weight: 900;
+                                        }
+                                        .chapter-title{
+                                            color: $white;
+                                        }
+                                        .published-status{
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:not(.mast-image){
+                            // background: url("#{$images-path}img_course_bg_category-1.jpg") no-repeat top center/cover;
+                            @media (min-width: 992px) {
+                                &::before{
+                                    // background: url("#{$images-path}img_header_after.svg") no-repeat top center/contain !important;
+                                }
+                            }
+                        }
+
+                    }
+
+                    #snap-course-footer{
+                        background-color: unset;
+
+                        h5{
+                            color: rgba($blue-site-semilight,0.8);
+                            font-family: 'museosans-900';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

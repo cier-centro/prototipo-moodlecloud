@@ -1,0 +1,65 @@
+/*----------------------------------
+---------------Modal----------------
+------------------------------------*/
+.modal-backdrop{
+    background-color: $blue-site;
+}
+
+.modal{
+    .modal-dialog {
+        .modal-content {
+            border: none;
+
+            .modal-header {
+                background-color: $orange-site;
+                position: relative;
+                border: none;
+
+                &::before{
+                    content: '';
+                    background: url("#{$images-path}img_header_after_section.svg") no-repeat top center/contain;
+                    width: 70px;
+                    height: 50px;
+                    position: absolute;
+                    left: calc(50% - 35px);
+                    bottom: -49px;
+                }
+
+                .close {
+                    color: $white;
+                    font-family: 'museosans-900';
+                    margin-left: 0;
+                    opacity: 1;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+                .modal-title {
+                    color: $white !important;
+                    font-family: 'museosans-700';
+                }
+            }
+            .modal-body {
+                color: $blue-site;
+                font-family: 'museosans-300';
+                padding-top: 1em;
+            }
+            .modal-footer {
+                color: $blue-site;
+                font-family: 'museosans-300';
+            }
+        }
+    }
+}
+
+.popover{
+    .popover-header{
+        color: $blue-site;
+        font-family: 'museosans-700';
+    }
+
+    .popover-body{
+        color: $blue-site;
+        font-family: 'museosans-300';
+    }
+}
