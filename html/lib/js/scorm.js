@@ -10,7 +10,7 @@
 //-------------------------------
 // Variables
 // Definir si se permite la comunicación con el lms para el paquete
-var allowScorm = true;
+var allowScorm = false;
 // TODO Establecer dentro del config debug
 var allowScormLog =  true;
 // Valor personalizable que podemos enviar entre el scorm y el lms
