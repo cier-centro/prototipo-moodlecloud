@@ -32,12 +32,7 @@ body:not(.pagelayout-course) #moodle-footer{
     }
 }
 
-#snap-course-footer{
-    box-shadow: 0rem 0rem 0.5rem 0rem rgba($blue-site-semilight,0.3);
-    margin-top: 0;
-}
-
-#footer-idep{
+#footer-course{
     background-color: $orange-site;
     border-top: 1px solid $orange-site;
 

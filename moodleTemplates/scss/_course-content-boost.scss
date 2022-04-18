@@ -15,10 +15,9 @@
                 font-size: 2.5rem;
             }
 
-
             &::before{
                 content: '';
-                background: url("#{$images-path}img_idep_logo.svg") no-repeat center top/contain;
+                //background: url("#{$images-path}img_idep_logo.svg") no-repeat center top/contain;
                 width: 100%;
                 height: 60px;
                 position: absolute;

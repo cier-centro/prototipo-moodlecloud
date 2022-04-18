@@ -3,6 +3,7 @@
 ------------------------------------*/
 
 body{
+/*
     font-family: 'museosans-500';
     color: $blue-site;
 
@@ -18,8 +19,10 @@ body{
             font-family: 'museosans-700';
             i,em{
                 font-family: 'museosans-700-italic';
+                &.fa{
+                    font:normal normal normal 14px/1 FontAwesome !important;
+                }
             }
-
         }
     }
 
@@ -53,145 +56,12 @@ body{
             }
         }
     }
+
     .media-course{
         background: url(/idep-html-2021/images/bg-media.png) no-repeat center left;
         background-position-x: -310px;
         padding: 10px;
         border-radius: 15px;
     }
-}
-.page-context-header{
-    width: 100%;
-    margin-left: 10%;
-    .page-header-headings>h1{
-        background-color: white;
-        padding: 10px 20px;
-        border-radius: 50px;
-        border: solid 1px $blue-site;
-        margin-top: 52px;
-    }
-}
-#page-mod-page-view .no-overflow{
-    .bg-children-1{
-        background: url(/idep-html-2021/images/img-mmis.png) no-repeat bottom right;
-    }
-    * {
-        box-sizing: border-box;
-      }
-      
-      .page-contain {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(255, 255, 255, 0);
-        // border: .75em solid white;
-        // padding: 2em;
-        font-family: 'Open Sans', sans-serif;
-      }
-      
-      .data-card {
-        display: flex;
-        flex-direction: column;
-        max-width: 20.75em;
-        // min-height: 20.75em;
-        overflow: hidden;
-        border-radius: .5em;
-        text-decoration: none;
-        background: rgba(255, 255, 255, 0.85);
-        margin: 1em;
-        padding: 2.75em 1.5em;
-        box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
-        transition: transform .45s ease, background .45s ease;
-        
-        h4 {
-          color: #2E3C40;
-          font-size: 0.7em;
-          font-weight: 600;
-          line-height: 1;
-          padding-bottom: 0.5em;
-          margin: 0 0 0.7em;
-          border-bottom: 2px solid #34BFBF;
-          transition: color .45s ease, border .45s ease;
-        }
-      
-        h5 {
-          color: #627084;
-          text-transform: uppercase;
-          font-size: 1.125em;
-          font-weight: 700;
-          line-height: 1;
-          letter-spacing: 0.1em;
-          margin: 0 0 1.777777778em;
-          transition: color .45s ease;
-        }
-      
-        p {
-          opacity: 0;
-          color: #FFFFFF;
-          font-weight: 600;
-          line-height: 1.8;
-          margin: 0 0 1.25em;
-          transform: translateY(-1em);
-          transition: opacity .45s ease, transform .5s ease;
-        }
-      
-        .link-text {
-          display: block;
-          color: #34BFBF;
-          font-size: 1.125em;
-          font-weight: 600;
-          line-height: 1.2;
-          margin: auto 0 0;
-          transition: color .45s ease;
-      
-          svg {
-            margin-left: .5em;
-            transition: transform .6s ease;
-            
-            path {
-              transition: fill .45s ease;
-            }
-          }
-        }
-        
-        &:hover {
-          background: #009995;
-          transform: scale(1.02);
-          
-          h4 {
-            color: #FFFFFF!important;
-            border-bottom-color: #34BFBF;
-          }
-      
-          h5 {
-            color: #FFFFFF!important;
-          }
-      
-          p {
-            opacity: 1;
-            transform: none;
-          }
-      
-          .link-text {
-            color: #FFFFFF;
-      
-            svg {
-              animation: point 1.25s infinite alternate;
-              
-              path {
-                fill: #FFFFFF;
-              }
-            }
-          }
-        }
-      }
-//general      
-      @keyframes point {
-        0% {
-         transform: translateX(0);
-        }
-        100% {
-          transform: translateX(.125em);
-        }
-      }
+    */
 }

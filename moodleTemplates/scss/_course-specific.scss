@@ -1,154 +1,27 @@
 /*----------------------------------
 -----------course-specific----------
 ------------------------------------*/
-.course-4,
-.course-5{
-    &.theme-snap{
-        #page{
-            #page-content{
-                #moodle-page{
-                    #page-header{
-                        @media (min-width: 992px) {
-                            &::before{
-                                background: url("#{$images-path}img_header_after_category-1_dark.svg") no-repeat top center/contain !important;
-                            }
-                        }
-                        #page-mast{
-                            #course-toc{
-                                background-color: $category-1;
-                            }
-                        }
-                    }
-
-                    #region-main{
-                        overflow: hidden;
-                        background: url("#{$images-path}img_page_bottom_category-1.svg") no-repeat bottom left/30%;
-                        &::after{
-                            background: unset;
-                        }
-
-                        &::before{
-                            background: url("#{$images-path}img_page_top_category-1.svg") no-repeat top right/100%;
-                        }
-
-                        .sectionname{
-                            background-color: $category-1-light !important;
-                            &::after{
-                                background: url("#{$images-path}img_header_after_category-1.svg") no-repeat top center/contain !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.course-17,
-.course-18{
-    #page-wrapper{
-        #page{
-            #page-header{
-                .col-12{
-                    .card{
-                        .card-body{
-                            div{
-                                &.align-items-center{
-                                    background: url("#{$images-path}img_course_bg_category-1.svg") no-repeat top center/cover;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            #page-content{
-                background: url("#{$images-path}img_page_bottom_category-1.svg") no-repeat bottom left/30%;
-                &::before{
-                    background: url("#{$images-path}img_page_top_category-1.svg") no-repeat top right/100%;
-                }
-            }
-        }
-    }
-}
-
 //page-site-index
-.theme-snap{
-    &#page-site-index{
-        #page{
-            #page-content{
-                #moodle-page{
-                    #region-main{
-                        div[role=main]{
-                            #moodle-frontpage-elements{
-                                #frontpage-course-list{
-                                    .courses{
-                                        .coursebox{
-                                            //formación
-                                            &[data-courseid="4"]{
-                                                .content{
-                                                    .courseimage{
-                                                        background:$green-site-light url("#{$images-path}icon_comp_4_formacion.svg") no-repeat center center/25% !important;
-                                                        @media (min-width: 1800px) {
-                                                            background-size: 20%;
-                                                        }
-                                                        img{
-                                                            opacity: 0;
-                                                        }
+#page-site-index{
+    #page{
+        #page-content{
+            #moodle-page{
+                #region-main{
+                    div[role=main]{
+                        #moodle-frontpage-elements{
+                            #frontpage-course-list{
+                                .courses{
+                                    .coursebox{
+                                        //tarjeta curso
+                                        &[data-courseid=""]{
+                                            .content{
+                                                .courseimage{
+                                                    //background:$green-site-light url("#{$images-path}icon_comp_4_formacion.svg") no-repeat center center/25% !important;
+                                                    @media (min-width: 1800px) {
+                                                        background-size: 20%;
                                                     }
-                                                }
-                                            }
-                                            //mentoria
-                                            &[data-courseid="5"]{
-                                                .content{
-                                                    .courseimage{
-                                                        background:$green-site-light url("#{$images-path}icon_comp_4_mentoria.svg") no-repeat center center/15% !important;
-                                                        @media (min-width: 992px) {
-                                                            background-size: 20%;
-                                                        }
-                                                        @media (min-width: 1800px) {
-                                                            background-size: 15%;
-                                                        }
-
-                                                        img{
-                                                            opacity: 0;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            //sistematización
-                                            &[data-courseid="17"]{
-                                                .content{
-                                                    .courseimage{
-                                                        background:$green-site-light url("#{$images-path}icon_comp_4_sistematizacion.svg") no-repeat center center/25% !important;
-                                                        @media (min-width: 1800px) {
-                                                            background-size: 20%;
-                                                        }
-                                                        img{
-                                                            opacity: 0;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            //conexión
-                                            &[data-courseid="18"]{
-                                                .info{
-                                                    width: 80%;
-                                                    @media (min-width: 992px) {
-                                                        width: 70%;
-                                                    }
-                                                    @media (min-width: 1200px) {
-                                                        width: 80%;
-                                                    }
-                                                }
-                                                .content{
-                                                    .courseimage{
-                                                        background:$green-site-light url("#{$images-path}icon_comp_4_conexion.jpg") no-repeat center center/25% !important;
-                                                        @media (min-width: 1800px) {
-                                                            background-size: 20%;
-                                                        }
-                                                        img{
-                                                            opacity: 0;
-                                                        }
+                                                    img{
+                                                        opacity: 0;
                                                     }
                                                 }
                                             }

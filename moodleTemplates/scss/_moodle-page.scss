@@ -1,18 +1,16 @@
 /*----------------------------------
 ------------page-site-index---------
 ------------------------------------*/
-.theme-snap{
+#page{
+    #page-content{
+        #moodle-page{
+            #page-header{
+                min-height: 300px;
+                position: relative;
+                box-shadow: 0rem 0.5rem 0.5rem 0rem rgba($blue-site-semilight,0.3);
+                padding-top: 5.5em;
 
-    &.snap-pm-open{
-        #snap-pm{
-            background-color: $white;
-
-            #snap-pm-inner{
-                #snap-pm-header{
-                    position: relative;
-                    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba($blue-site-semilight,0.3);
-                    background: $orange-site url("#{$images-path}img_bg_lines.svg") no-repeat 0 center/cover;
-
+                @media (min-width: 992px) {
                     &::before{
                         content: '';
                         background: url("#{$images-path}img_header_after_section.svg") no-repeat top center/contain;
@@ -22,191 +20,52 @@
                         left: calc(50% - 35px);
                         bottom: -49px;
                     }
+                }
 
-                    #snap-pm-close{
-                        font-family: 'museosans-300' !important;
-                        padding: 0;
-                        color: $blue-site !important;
-                        position: relative;
-                        z-index: 1;
-
-                        &::before{
-                            background: $blue-site url("#{$images-path}icon_close.svg") no-repeat 50% 50% /50%;
-                            box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
-                            padding: 1rem;
-                            border-radius: 50rem;
-                            margin-bottom: 0.5rem;
-                        }
-
-                        &:hover{
-                            color: $white;
+                .breadcrumb-nav{
+                    .breadcrumb{
+                        border: unset;
+                        .breadcrumb-item{
+                            a{
+                                color: $blue-site;
+                                text-shadow: none;
+                            }
 
                             &::before{
-                                background-color: $orange-site !important;
-                            }
-                        }
-                    }
-
-                    .snap-pm-user{
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                        margin-left: 3em;
-
-                        #snap-pm-user-profile{
-                            font-family: 'museosans-900';
-                        }
-
-                        .userpicture{
-                            box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
-                            border: none;
-                            margin: 0 auto;
-                        }
-
-                        .defaultuserpic{
-                            display: block;
-                            width: 5em;
-                            height: 5em;
-                            padding-left: 5em;
-                            background: url("#{$images-path}img_user_avatar.svg") no-repeat center/contain;
-                        }
-                        @media (min-width: 992px) {
-                            #snap-pm-header-quicklinks{
-                                margin-top: 0.5rem;
-                                a{
-                                    color: $orange-site !important;
-                                    border: solid 1px $orange-site;
-                                    background-color: $white;
-                                    border-radius: 50rem;
-                                    padding: 0.3rem 1rem;
-                                    box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
-                                    font-family: 'museosans-300';
-
-                                    &:after{
-                                        content: "";
-                                        display: none;
-                                    }
-
-                                    &:hover{
-                                        color: $white !important;
-                                        background-color: $blue-site !important;
-                                        border-color: $white;
-                                        text-decoration: none !important;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                }
-
-                #snap-pm-content{
-                    margin-top: 1.2em;
-                    @media (min-width: 992px) {
-                        margin-top: 0.5em;
-                    }
-
-                    #snap-pm-courses{
-                        #snap-pm-courses-current{
-                            #snap-pm-courses-current-cards{
-                                .coursecard{
-                                    box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
-
-                                    .favoritetoggle{
-                                        &::after{
-                                            background: url("#{$images-path}icon_fav_star.svg") no-repeat center/contain;
-                                        }
-                                    }
-
-                                    .coursecard-body{
-                                        .coursecard-coursename{
-                                            font-family: 'museosans-900';
-                                        }
-
-                                        .coursecard-dynamicinfo{
-                                            .completionstatus{
-                                                border-color: $gray;
-                                                font-family: 'museosans-300';
-                                                span{
-                                                    font-family: 'museosans-700';
-                                                }
-                                            }
-                                            .completion-line{
-                                                background-color: $orange-site;
-                                            }
-                                        }
-
-                                        .coursecard-contacts{
-                                            .defaultuserpic{
-                                                display: block;
-                                                width: 2rem;
-                                                height: 2rem;
-                                                margin: 0 auto;
-                                                padding: 0 0 0 2rem;
-                                                background: url("#{$images-path}img_user_avatar.svg") no-repeat center/cover;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    #snap-pm-updates{
-                        background-color: $gray-light;
-
-                        section{
-                            border-color: $green-site-light;
-                            font-family: 'museosans-300';
-
-                            h2{
                                 color: $blue-site;
-                                font-family: 'museosans-500';
-                            }
-
-                            a{
-                                color: $blue-light;
+                                text-shadow: none;
                             }
                         }
                     }
                 }
-            }
-        }
-    }
 
-    #page{
-        #page-content{
-            #moodle-page{
-                #page-header{
-                    min-height: 300px;
-                    position: relative;
-                    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba($blue-site-semilight,0.3);
-                    padding-top: 5.5em;
+                #page-mast{
+                    text-align: center;
 
-                    @media (min-width: 992px) {
-                        &::before{
-                            content: '';
-                            background: url("#{$images-path}img_header_after_section.svg") no-repeat top center/contain;
-                            width: 70px;
-                            height: 50px;
-                            position: absolute;
-                            left: calc(50% - 35px);
-                            bottom: -49px;
+                    h1{
+                        color: $blue-site;
+                        position: relative;
+                        // padding-top: 50px;
+                        margin-top: 1em;
+                        a{
+                            color: $blue-site;
                         }
                     }
+                }
+
+                &:not(.mast-image){
+                    background: $orange-site url("#{$images-path}img_bg_lines.svg") no-repeat 0 center/cover;
 
                     .breadcrumb-nav{
                         .breadcrumb{
                             border: unset;
                             .breadcrumb-item{
                                 a{
-                                    color: $blue-site;
-                                    text-shadow: none;
+                                    color: $white;
                                 }
 
                                 &::before{
-                                    color: $blue-site;
-                                    text-shadow: none;
+                                    color: $white;
                                 }
                             }
                         }
@@ -216,361 +75,328 @@
                         text-align: center;
 
                         h1{
-                            color: $blue-site;
-                            position: relative;
-                            // padding-top: 50px;
-                            margin-top: 1em;
-                            a{
-                                color: $blue-site;
-                            }
-                        }
-                    }
-
-                    &:not(.mast-image){
-                        background: $orange-site url("#{$images-path}img_bg_lines.svg") no-repeat 0 center/cover;
-
-                        .breadcrumb-nav{
-                            .breadcrumb{
-                                border: unset;
-                                .breadcrumb-item{
-                                    a{
-                                        color: $white;
-                                    }
-
-                                    &::before{
-                                        color: $white;
-                                    }
-                                }
-                            }
-                        }
-
-                        #page-mast{
-                            text-align: center;
-
-                            h1{
-                                color: $white;
-                                position: relative;
-                                padding-top: 50px;
-                                margin-top: 1em;
-                                max-width: 80%;
-                                margin: auto;
-
-                                &::before{
-                                    content: '';
-                                    background: url("#{$images-path}img_idep_logo_header.svg") no-repeat bottom center/contain;
-                                    width: 200px;
-                                    height: 80px;
-                                    position: absolute;
-                                    left: calc(50% - 100px);
-                                    top: -40px;
-                                    margin-bottom: 50px;
-                                    @media (min-width: 768px) {
-                                        height: 100px;
-                                        top: -60px;
-                                    }
-                                }
-
-                                a{
-                                    color: $white;
-                                }
-                            }
-
-                            #course-toc{
-                                background-color: unset;
-                            }
-                        }
-                    }
-                }
-
-                #region-main{
-                    font-family: 'museosans-500';
-                    color: $blue-site;
-                    padding-top: 0;
-                    padding-bottom: 1em;
-                    max-width: 100%;
-                    background: url("#{$images-path}img_page_bottom.svg") no-repeat bottom left/30%;
-                    &::after{
-                        background: unset;
-                    }
-
-                    &::before{
-                        content: '';
-                        background: url("#{$images-path}img_page_top.svg") no-repeat top right/100%;
-                        width: 20%;
-                        height: 400px;
-                        right: 0;
-                        position: absolute;
-                        pointer-events: none;
-                        z-index: -1;
-                    }
-
-                    div[role=main]{
-                        margin-top: 2em;
-
-                        .sectionname{
-                            background-color: $blue-site;
                             color: $white;
                             position: relative;
-                            padding-left: 1.5em;
-                            margin-bottom: 1em;
-                            border-radius: 0.5rem;
-                            text-align: left;
-                            font-family: 'museosans-700';
-                            font-size: 1.8rem;
+                            padding-top: 50px;
+                            margin-top: 1em;
+                            max-width: 80%;
+                            margin: auto;
+
+                            &::before{
+                                content: '';
+                                background: url("#{$images-path}img_idep_logo_header.svg") no-repeat bottom center/contain;
+                                width: 200px;
+                                height: 80px;
+                                position: absolute;
+                                left: calc(50% - 100px);
+                                top: -40px;
+                                margin-bottom: 50px;
+                                @media (min-width: 768px) {
+                                    height: 100px;
+                                    top: -60px;
+                                }
+                            }
 
                             a{
                                 color: $white;
                             }
-
-                            &::before{
-                                content: "";
-                                width: 1.8rem;
-                                height: 1.8rem;
-                                background: url("#{$images-path}icon_page_white.svg") no-repeat center center/contain;
-                                margin-left: -2rem;
-                                position: absolute;
-                                top: 0.7rem;
-                            }
-
-                            &::after{
-                                content: '';
-                                background: url("#{$images-path}img_header_after_title.svg") no-repeat top center/contain;
-                                width: 70px;
-                                height: 50px;
-                                position: absolute;
-                                left: calc(50% - 35px);
-                                bottom: -49px;
-                            }
                         }
 
-                        h1,h2,h3,h4,h5{
-                            color: $blue-site;
+                        #course-toc{
+                            background-color: unset;
                         }
                     }
                 }
+            }
 
-                #moodle-blocks{
-                    box-shadow: 0rem 0rem 0.5rem 0rem rgba($blue-site-semilight,0.3);
-                    background-color: $gray-light;
-                    max-width: 100%;
+            #region-main{
+                font-family: 'museosans-500';
+                color: $blue-site;
+                padding-top: 0;
+                padding-bottom: 1em;
+                max-width: 100%;
+                background: url("#{$images-path}img_page_bottom.svg") no-repeat bottom left/30%;
+                &::after{
+                    background: unset;
+                }
 
-                    #block-region-side-pre{
-                        max-width: 60.5em;
-                        margin: 0 auto;
+                &::before{
+                    content: '';
+                    background: url("#{$images-path}img_page_top.svg") no-repeat top right/100%;
+                    width: 20%;
+                    height: 400px;
+                    right: 0;
+                    position: absolute;
+                    pointer-events: none;
+                    z-index: -1;
+                }
 
-                        .block {
-                            &.block_settings {
-                                &.card{
-                                    .card-body{
-                                        .card-text{
-                                            &.content{
-                                                margin-top: 3rem !important;
-                                            }
+                div[role=main]{
+                    margin-top: 2em;
+
+                    .sectionname{
+                        background-color: $blue-site;
+                        color: $white;
+                        position: relative;
+                        padding-left: 1.5em;
+                        margin-bottom: 1em;
+                        border-radius: 0.5rem;
+                        text-align: left;
+                        font-family: 'museosans-700';
+                        font-size: 1.8rem;
+
+                        a{
+                            color: $white;
+                        }
+
+                        &::before{
+                            content: "";
+                            width: 1.8rem;
+                            height: 1.8rem;
+                            background: url("#{$images-path}icon_page_white.svg") no-repeat center center/contain;
+                            margin-left: -2rem;
+                            position: absolute;
+                            top: 0.7rem;
+                        }
+
+                        &::after{
+                            content: '';
+                            background: url("#{$images-path}img_header_after_title.svg") no-repeat top center/contain;
+                            width: 70px;
+                            height: 50px;
+                            position: absolute;
+                            left: calc(50% - 35px);
+                            bottom: -49px;
+                        }
+                    }
+
+                    h1,h2,h3,h4,h5{
+                        color: $blue-site;
+                    }
+                }
+            }
+
+            #moodle-blocks{
+                box-shadow: 0rem 0rem 0.5rem 0rem rgba($blue-site-semilight,0.3);
+                background-color: $gray-light;
+                max-width: 100%;
+
+                #block-region-side-pre{
+                    max-width: 60.5em;
+                    margin: 0 auto;
+
+                    .block {
+                        &.block_settings {
+                            &.card{
+                                .card-body{
+                                    .card-text{
+                                        &.content{
+                                            margin-top: 3rem !important;
                                         }
                                     }
                                 }
                             }
+                        }
 
-                            &.block_timeline,
-                            &.block_private_files,
-                            &.block_badges,
-                            &.block_calendar_month,
-                            &.block_calendar_upcoming,
-                            &.block_online_users{
-                                border-radius: 0.5rem;
-                                background-color: $white;
-                                box-shadow: 0rem 0.5rem 0.5rem 0rem rgba($blue-site-semilight,0.3);
-                                padding: 0;
+                        &.block_timeline,
+                        &.block_private_files,
+                        &.block_badges,
+                        &.block_calendar_month,
+                        &.block_calendar_upcoming,
+                        &.block_online_users{
+                            border-radius: 0.5rem;
+                            background-color: $white;
+                            box-shadow: 0rem 0.5rem 0.5rem 0rem rgba($blue-site-semilight,0.3);
+                            padding: 0;
 
-                                .card-body{
-                                    padding: 0 !important;
-                                    padding-bottom: 1rem !important;
+                            .card-body{
+                                padding: 0 !important;
+                                padding-bottom: 1rem !important;
 
-                                    .card-title{
-                                        position: relative;
-                                        background: url("#{$images-path}img_site_timeline_bg.svg") no-repeat top left/contain;
-                                        font-family: 'museosans-900';
-                                        color: $white;
-                                        padding: 0.5em 2em 1em 2em;
-                                        top: 0.5em;
-                                        border-radius: 0.5rem 0 0 0;
+                                .card-title{
+                                    position: relative;
+                                    background: url("#{$images-path}img_site_timeline_bg.svg") no-repeat top left/contain;
+                                    font-family: 'museosans-900';
+                                    color: $white;
+                                    padding: 0.5em 2em 1em 2em;
+                                    top: 0.5em;
+                                    border-radius: 0.5rem 0 0 0;
 
-                                        &::before{
-                                            content: "";
-                                            width: 1.2rem;
-                                            height: 1.2rem;
-                                            background: url("#{$images-path}icon_bookmark_white.svg") no-repeat center center/contain;
-                                            margin-left: -1.5rem;
-                                            position: absolute;
-                                            top: 0.7rem;
-                                        }
+                                    &::before{
+                                        content: "";
+                                        width: 1.2rem;
+                                        height: 1.2rem;
+                                        background: url("#{$images-path}icon_bookmark_white.svg") no-repeat center center/contain;
+                                        margin-left: -1.5rem;
+                                        position: absolute;
+                                        top: 0.7rem;
                                     }
+                                }
 
-                                    .card-text{
-                                        margin-top: 1.5rem !important;
+                                .card-text{
+                                    margin-top: 1.5rem !important;
+                                    padding: 0 4%;
+                                }
+                            }
+                        }
+
+                        &.block_private_files{
+                            .card-body{
+                                .card-title{
+                                    background: url("#{$images-path}img_site_privatefiles_bg.svg") no-repeat top left/contain;
+
+                                    &::before{
+                                        background: url("#{$images-path}icon_folder_white.svg") no-repeat center center/contain;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.block_badges{
+                            .card-body{
+                                .card-title{
+                                    background: url("#{$images-path}img_site_badges_bg.svg") no-repeat top left/contain;
+                                    color: $blue-site;
+
+                                    &::before{
+                                        background: url("#{$images-path}icon_badges.svg") no-repeat center center/contain;
+                                    }
+                                }
+
+                                .card-text{
+                                    margin-top: 2rem !important;
+                                    .block-timeline{
                                         padding: 0 4%;
                                     }
                                 }
                             }
+                        }
 
-                            &.block_private_files{
-                                .card-body{
-                                    .card-title{
-                                        background: url("#{$images-path}img_site_privatefiles_bg.svg") no-repeat top left/contain;
+                        &.block_calendar_month{
+                            background: $white url("#{$images-path}img_site_calendar_bg.svg") no-repeat top left/cover;
+                            .card-body{
+                                .card-title{
+                                    background: none;
+                                    color: $blue-site;
 
-                                        &::before{
-                                            background: url("#{$images-path}icon_folder_white.svg") no-repeat center center/contain;
-                                        }
+                                    &::before{
+                                        background: url("#{$images-path}icon_calendar.svg") no-repeat center center/contain;
                                     }
                                 }
-                            }
-
-                            &.block_badges{
-                                .card-body{
-                                    .card-title{
-                                        background: url("#{$images-path}img_site_badges_bg.svg") no-repeat top left/contain;
-                                        color: $blue-site;
-
-                                        &::before{
-                                            background: url("#{$images-path}icon_badges.svg") no-repeat center center/contain;
-                                        }
-                                    }
-
-                                    .card-text{
-                                        margin-top: 2rem !important;
-                                        .block-timeline{
-                                            padding: 0 4%;
-                                        }
-                                    }
-                                }
-                            }
-
-                            &.block_calendar_month{
-                                background: $white url("#{$images-path}img_site_calendar_bg.svg") no-repeat top left/cover;
-                                .card-body{
-                                    .card-title{
-                                        background: none;
-                                        color: $blue-site;
-
-                                        &::before{
-                                            background: url("#{$images-path}icon_calendar.svg") no-repeat center center/contain;
-                                        }
-                                    }
-                                    .card-text{
-                                        .minicalendar{
-                                            &.calendartable{
-                                                .day{
-                                                    span{
-                                                        background-color: $white;
-                                                        border-radius: 100%;
-                                                        width: 2.5em;
-                                                        height: 2.5em;
-                                                        padding: 0.5em;
-                                                        margin: auto;
-                                                        display: block;
-                                                    }
-
-                                                    &.today{
-                                                        a{
-                                                            background-color: $orange-site;
-                                                            color: $white;
-                                                            border-color: $white;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-                            &.block_calendar_upcoming{
-                                .card-body{
-                                    .card-title{
-                                        background: none;
-                                        color: $blue-site;
-
-                                        &::before{
-                                            background: url("#{$images-path}icon_event.svg") no-repeat center center/contain;
-                                        }
-                                    }
-
-                                    .card-text{
-                                        .event{
-                                            padding: 0.5em;
-                                            border-radius: 0.5rem;
-                                            background-color: $gray-light;
-                                            margin-bottom: 0.3em;
-                                            border: none;
-
-                                            hr{
-                                                background-color: unset;
-                                                margin: 0;
-                                                height: 0;
-                                            }
-
-                                            .icon{
-                                                position: relative;
-
-                                                &::before{
-                                                    content: "";
-                                                    width: 1.2rem;
-                                                    height: 1.2rem;
+                                .card-text{
+                                    .minicalendar{
+                                        &.calendartable{
+                                            .day{
+                                                span{
+                                                    background-color: $white;
                                                     border-radius: 100%;
-                                                    background:$white url("#{$images-path}icon_event_orange.svg") no-repeat center center/75%;
-                                                    margin-left: -0.5rem;
-                                                    position: absolute;
-                                                    top: 0.1rem;
+                                                    width: 2.5em;
+                                                    height: 2.5em;
+                                                    padding: 0.5em;
+                                                    margin: auto;
+                                                    display: block;
+                                                }
 
-                                                    @media (min-width: 992px) {
-                                                        width: 1.5rem;
-                                                        height: 1.5rem;
-                                                        top: -0.3rem;
+                                                &.today{
+                                                    a{
+                                                        background-color: $orange-site;
+                                                        color: $white;
+                                                        border-color: $white;
                                                     }
                                                 }
                                             }
-
                                         }
                                     }
                                 }
                             }
+                        }
 
-                            &.block_online_users{
-                                .card-body{
-                                    .card-title{
-                                        background: none;
-                                        color: $blue-site;
+                        &.block_calendar_upcoming{
+                            .card-body{
+                                .card-title{
+                                    background: none;
+                                    color: $blue-site;
 
-                                        &::before{
-                                            background: url("#{$images-path}icon_users.svg") no-repeat center center/contain;
+                                    &::before{
+                                        background: url("#{$images-path}icon_event.svg") no-repeat center center/contain;
+                                    }
+                                }
+
+                                .card-text{
+                                    .event{
+                                        padding: 0.5em;
+                                        border-radius: 0.5rem;
+                                        background-color: $gray-light;
+                                        margin-bottom: 0.3em;
+                                        border: none;
+
+                                        hr{
+                                            background-color: unset;
+                                            margin: 0;
+                                            height: 0;
                                         }
+
+                                        .icon{
+                                            position: relative;
+
+                                            &::before{
+                                                content: "";
+                                                width: 1.2rem;
+                                                height: 1.2rem;
+                                                border-radius: 100%;
+                                                background:$white url("#{$images-path}icon_event_orange.svg") no-repeat center center/75%;
+                                                margin-left: -0.5rem;
+                                                position: absolute;
+                                                top: 0.1rem;
+
+                                                @media (min-width: 992px) {
+                                                    width: 1.5rem;
+                                                    height: 1.5rem;
+                                                    top: -0.3rem;
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        &.block_online_users{
+                            .card-body{
+                                .card-title{
+                                    background: none;
+                                    color: $blue-site;
+
+                                    &::before{
+                                        background: url("#{$images-path}icon_users.svg") no-repeat center center/contain;
+                                    }
+                                }
+
+                                .card-text{
+                                    .info{
+                                        font-family: 'museosans-300';
                                     }
 
-                                    .card-text{
-                                        .info{
-                                            font-family: 'museosans-300';
-                                        }
+                                    .list{
+                                        .user{
+                                            position: relative;
 
-                                        .list{
-                                            .user{
-                                                position: relative;
+                                            .userpicture{
+                                                border: none;
+                                                margin: 0 auto;
+                                            }
 
-                                                .userpicture{
-                                                    border: none;
-                                                    margin: 0 auto;
-                                                }
+                                            .defaultuserpic{
+                                                width: 1em;
+                                                height: 1em;
+                                                padding-left: 1em;
+                                                background: url("#{$images-path}icon_user_green.svg") no-repeat center/75%;
 
-                                                .defaultuserpic{
-                                                    width: 1em;
-                                                    height: 1em;
-                                                    padding-left: 1em;
-                                                    background: url("#{$images-path}icon_user_green.svg") no-repeat center/75%;
-
-                                                    @media (min-width: 992px) {
-                                                        width: 1.2em;
-                                                        height: 1.2em;
-                                                        padding-left: 1.2em;
-                                                    }
+                                                @media (min-width: 992px) {
+                                                    width: 1.2em;
+                                                    height: 1.2em;
+                                                    padding-left: 1.2em;
                                                 }
                                             }
                                         }
@@ -583,47 +409,48 @@
             }
         }
     }
+}
 
-    .btn{
-        border: none !important;
+.btn{
+    border: none !important;
 
-        &.btn-primary{
-            border-radius: 50rem !important;
-            box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
+    &.btn-primary{
+        border-radius: 50rem !important;
+        box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
 
-            &:hover{
+        &:hover{
 
-                background-color: $orange-site !important;
-                outline-color: $orange-site !important;
-            }
-        }
-
-        &.btn-secondary{
             background-color: $orange-site !important;
             outline-color: $orange-site !important;
-            color: $white !important;
-            border-radius: 50rem !important;
-            box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
-
-            .icon{
-                &.fa{
-                    color: $white !important;
-                }
-            }
-
-            &:hover{
-                background-color: $blue-site !important;
-                outline-color: $blue-site !important;
-            }
         }
     }
 
-    .alert{
-        &.alert-danger{
-            color: $white;
-            background-color: $blue-site-light;
-            border-color: $blue-site;
+    &.btn-secondary{
+        background-color: $orange-site !important;
+        outline-color: $orange-site !important;
+        color: $white !important;
+        border-radius: 50rem !important;
+        box-shadow: 0.2rem 0.2rem 0.5rem 0.1rem rgba($black,0.3);
+
+        .icon{
+            &.fa{
+                color: $white !important;
+            }
+        }
+
+        &:hover{
+            background-color: $blue-site !important;
+            outline-color: $blue-site !important;
         }
     }
 }
+
+.alert{
+    &.alert-danger{
+        color: $white;
+        background-color: $blue-site-light;
+        border-color: $blue-site;
+    }
+}
+
 
