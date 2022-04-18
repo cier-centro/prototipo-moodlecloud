@@ -1,46 +1,22 @@
 /*----------------------------------
 ---------------Variables------------
 ------------------------------------*/
-$url-site:"idep-html-2021";
-$images-path: "../images/";
-$font-path: "../fonts/";
 
 /* Colors -------------------------------*/
 $white: #ffffff !default; //
 $black: #000000 !default; //
-$gray: #CCCCCC !default;
 
-$gray-light: #F2F2F2;
-$blue-light: #007ED1;
-$blue-semilight: #3366CC;
+/*Nova Color*/
+$main:#ff4f14;
+$main-light: #ffa78a;
+$main:#9e2800;
 
-$blue-site: #323264;
-$blue-site-semilight: #4C4C63;
-$blue-site-light:#9898B2;
-$blue-site-ultralight:#DADADF;
+$accent-light:#5100e7;
+$accent-dark:#260031;
 
-$green-site-light: #5EBFC3;
-$yellow-site: #FAB71D;
-$magenta-site: #E51F5D;
-
-$orange-site: #E85B0C;
-$orange-site-semilight: #ED7C3D;
-$orange-site-light: #ED7C3D;
-$orange-site-dark: #BC5049;
-
-/*Courses*/
-$category-1: #BB8916;
-$category-1-light:#FAB71D;
-$category-2: #18A3AA;
-$category-2-light:#5EBFC3;
-/*
-$category-3: #E85B0C;
-$category-3-light:#E85B0C;
-$category-4: #E85B0C;
-$category-4-light:#E85B0C;
-*/
-/*Measures*/
-$main-header-height: 132px;
+$gray-light: #e6e6e6;
+$gray: #999999 !default;
+$gray-dark:#4d4d4d;
 
 // -------------------------------
 @media (min-width: 576px) { }

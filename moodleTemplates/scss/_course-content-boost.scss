@@ -335,41 +335,7 @@
             }
         }
     }
-    .conexion-calendar{
-        &::before{
-            content: '';
-            background: url("#{$images-path}conexion.svg") no-repeat center center/contain;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-    }
-    .mentoría-title{
-        margin-left: -10px;
-        &::before{
-            content: '';
-            background: url("#{$images-path}mentoria.svg") no-repeat center center/contain;
-            width: 100px;
-            height: 100px;
-            position: relative;
-            display: inline-block;
-            left: 0;
-            top: 0;
-        }
-    }
-    div.single-section.onetopic ul.topics{
-        background: white;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        margin-top: -10px;
-        li{
-            &::before{
-                border-left: none;
-            }
-        }
-    }
+
 }
 
 

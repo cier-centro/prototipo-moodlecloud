@@ -1,67 +1,167 @@
 /*----------------------------------
-----------------General--------------
+----------------Boost scss----------
 ------------------------------------*/
+$white: #ffffff;
+$black: #000000;
+$gray-light: #e6e6e6;
+$gray: #999999;
+$gray-dark:#4d4d4d;
+
+/*Nova Color*/
+$main:#ff4f14;
+$main-light: #ffa78a;
+$main-dark:#9e2800;
+$accent-light:#5100e7;
+$accent-dark:#260031;
 
 body{
-/*
-    font-family: 'museosans-500';
-    color: $blue-site;
+    background: $accent-dark !important;
+}
 
-    p{
-        font-family: 'museosans-500';
-        i,em{
-            font-family: 'museosans-500-italic';
-            &.fa{
-                font:normal normal normal 14px/1 FontAwesome !important;
+a{
+    color: $main;
+}
+
+#page-wrapper{
+    .navbar{
+        background-color: $main !important;
+        color: $white !important;
+
+        .navbar-brand{
+            color: $white !important;
+            background-color: $main !important;
+            font-weight: bold;
+        }
+
+        .nav-link{
+            background-color: $main !important;
+            border-color: $main !important;
+            .icon{
+                color: $white !important;
+            }
+
+            &:hover,
+            &:focus-visible{
+                background-color: $white !important;
+                .icon{
+                    color: $accent-dark !important;
+                }
             }
         }
-        b,strong{
-            font-family: 'museosans-700';
-            i,em{
-                font-family: 'museosans-700-italic';
-                &.fa{
-                    font:normal normal normal 14px/1 FontAwesome !important;
+
+        .navbar-nav{
+            .dropdown{
+                .dropdown-toggle{
+                    color: $white;
+                    .userbutton{
+                        line-height: 1.2;
+                    }
+
+                    &:hover,
+                    &:focus{
+                        color: $accent-dark !important;
+                        background-color: $white;
+                        &.nav-link{
+                            color: $accent-dark;
+                        }
+                    }
+                }
+                &.show{
+                    .dropdown-toggle{
+                        background-color: $white !important;
+                        &.nav-link{
+                            color: $accent-dark !important;
+                        }
+                    }
                 }
             }
         }
     }
 
-    h1{
-        font-family: 'museosans-900';
-        i,em{
-            font-family: 'museosans-900-italic';
-        }
-    }
+    #nav-drawer{
+        background-color: $accent-dark !important;
 
-    h2,h3{
-        font-family: 'museosans-700';
-        i,em{
-            font-family: 'museosans-700-italic';
-        }
-    }
+        .list-group{
+            border-radius: 0.5rem;
+            background-color: $white;
 
-    h4,h5,h6{
-        font-family: 'museosans-500';
-        i,em{
-            font-family: 'museosans-500-italic';
-        }
-    }
+            ul{
 
-    span,label{
-        font-family: 'museosans-300';
-        i,em{
-            font-family: 'museosans-300-italic';
-            &.fa{
-                font:normal normal normal 14px/1 FontAwesome !important;
+                li{
+                    .list-group-item{
+                        background-color: unset;
+                        border: none;
+                        border-bottom: 1px solid $accent-dark;
+                        color: $accent-dark;
+
+                        .icon{
+                            &::before{
+                                color: $accent-dark;
+                            }
+                        }
+
+                        &.active, &:hover{
+                            background-color: $main;
+                            color: $white;
+                            .icon{
+                                &::before{
+                                    color: $white;
+                                }
+                            }
+                        }
+
+                    }
+
+                    &:first-child{
+                        .list-group-item{
+                            border-radius: 0.5rem 0.5rem 0 0;
+                        }
+                    }
+
+                    &:last-child{
+                        .list-group-item{
+                            border-bottom:none;
+                            border-radius: 0 0 0.5rem 0.5rem;
+                        }
+                    }
+                    &:only-child{
+                        .list-group-item{
+                            border-radius: 0.5rem;
+                        }
+                    }
+                }
             }
         }
     }
 
-    .media-course{
-        background: url(/idep-html-2021/images/bg-media.png) no-repeat center left;
-        background-position-x: -310px;
-        padding: 10px;
-        border-radius: 15px;
+    #page{
+        background-color: $white !important;
     }
-    */
+
+    #page-footer{
+        background-color: $accent-dark !important;
+        padding: 0 !important;
+
+        .container{
+            max-width: 100%;
+            padding: 0;
+            padding-top: 1em;
+
+            a[href^="https://download.moodle.org/"]{
+                padding: 0 4%;
+            }
+
+            .helplink,
+            .logininfo,
+            .homelink,
+            .tool_dataprivacy,
+            .policiesfooter{
+                display: none !important;
+            }
+
+            #footer-custom{
+                margin-top: 1em;
+            }
+        }
+    }
 }
