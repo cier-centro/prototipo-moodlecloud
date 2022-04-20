@@ -1,50 +1,63 @@
-/*----------------------------------
-----------------Boost scss----------
-------------------------------------*/
-$white: #ffffff;
-$black: #000000;
-$gray-light: #e6e6e6;
-$gray: #999999;
-$gray-dark:#4d4d4d;
-
-/*Nova Color*/
-$main:#ff4f14;
-$main-light: #ffa78a;
-$main-dark:#9e2800;
-$accent-light:#5100e7;
-$accent-dark:#260031;
-
+/*-----Boost scss-----*/
 body{
-    background: $accent-dark !important;
+    color: var(--gray-dark);
+    background: var(--accent-dark) !important;
+    &#page-login-index{
+        background: var(--accent-dark-alt) var(--login-bg-img) repeat-y bottom/cover !important;
+        background-position: right !important;
+        @media (min-width: 992px) {
+            background-position: center !important;
+        }
+    }
+}
+
+.btn-primary{
+    background-color: var(--main);
+    border-color: var(--main);
+    &:hover,
+    &:focus{
+        background-color: var(--alt-dark);
+    }
 }
 
 a{
-    color: $main;
+    color: var(--alt-dark);
+    &:hover,
+    &:focus{
+        color: var(--accent-light);
+    }
+}
+
+@media (min-width: 576px){
+    #region-main {
+        border: unset !important;
+    }
 }
 
 #page-wrapper{
     .navbar{
-        background-color: $main !important;
-        color: $white !important;
+        background-color: var(--main) !important;
+        color: var(--white) !important;
+        max-height: unset;
 
         .navbar-brand{
-            color: $white !important;
-            background-color: $main !important;
+            color: var(--white) !important;
+            background-color: var(--main) !important;
             font-weight: bold;
         }
 
         .nav-link{
-            background-color: $main !important;
-            border-color: $main !important;
+            background-color: var(--main) !important;
+            border-color: var(--main) !important;
             .icon{
-                color: $white !important;
+                color: var(--white) !important;
             }
 
             &:hover,
             &:focus-visible{
-                background-color: $white !important;
+                background-color: var(--white) !important;
                 .icon{
-                    color: $accent-dark !important;
+                    color: var(--accent-dark) !important;
                 }
             }
         }
@@ -52,25 +65,33 @@ a{
         .navbar-nav{
             .dropdown{
                 .dropdown-toggle{
-                    color: $white;
+                    color: var(--white);
                     .userbutton{
                         line-height: 1.2;
+
+                        .avatars{
+                            .avatar.current{
+                                img{
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
                     }
 
                     &:hover,
                     &:focus{
-                        color: $accent-dark !important;
-                        background-color: $white;
+                        color: var(--accent-dark) !important;
+                        background-color: var(--white);
                         &.nav-link{
-                            color: $accent-dark;
+                            color: var(--accent-dark);
                         }
                     }
                 }
                 &.show{
                     .dropdown-toggle{
-                        background-color: $white !important;
+                        background-color: var(--white) !important;
                         &.nav-link{
-                            color: $accent-dark !important;
+                            color: var(--accent-dark) !important;
                         }
                     }
                 }
@@ -79,11 +100,11 @@ a{
     }
 
     #nav-drawer{
-        background-color: $accent-dark !important;
+        background-color: var(--accent-dark) !important;
 
         .list-group{
             border-radius: 0.5rem;
-            background-color: $white;
+            background-color: var(--white);
 
             ul{
 
@@ -91,21 +112,21 @@ a{
                     .list-group-item{
                         background-color: unset;
                         border: none;
-                        border-bottom: 1px solid $accent-dark;
-                        color: $accent-dark;
+                        border-bottom: 1px solid var(--accent-dark);
+                        color: var(--accent-dark);
 
                         .icon{
                             &::before{
-                                color: $accent-dark;
+                                color: var(--accent-dark);
                             }
                         }
 
                         &.active, &:hover{
-                            background-color: $main;
-                            color: $white;
+                            background-color: var(--main);
+                            color: var(--white);
                             .icon{
                                 &::before{
-                                    color: $white;
+                                    color: var(--white);
                                 }
                             }
                         }
@@ -135,11 +156,138 @@ a{
     }
 
     #page{
-        background-color: $white !important;
+        #page-header{
+            background-color: var(--sec-light) !important;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            .card{
+                background-color: unset;
+                border: unset !important;
+                #page-navbar{
+                    .breadcrumb{
+                        background-color: unset;
+                        .breadcrumb-item+.breadcrumb-item{
+                            &::before{
+                                color: var(--alt-dark);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #page-content{
+            border-radius: 1rem;
+            background-color: var(--white) !important;
+            padding-top: 1rem;
+
+
+            #region-main-box{
+
+                section{
+                    &.card{
+                        background-color: var(--gray-light) !important;
+                        border-radius: 1rem !important;
+                        border: unset !important;
+                    }
+                }
+
+                #region-main{
+                    border: unset !important;
+
+                    .course-content{
+                        .section.main{
+                            border-bottom: unset !important;
+                        }
+                        .section-summary{
+                            background-color: var(--gray-light) !important;
+                            border-radius: 1rem !important;
+                            border: unset !important;
+                        }
+                        .single-section{
+                            .section-navigation{
+                                .navigationtitle{
+                                    .sectionname{
+                                        color: var(--alt-dark);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    div[role=main]{
+                        .block-region{
+                            .block_recentlyaccessedcourses{
+                                .card-body{
+                                    border-radius: 0.5rem;
+                                    border-color: var(--gray-light);
+                                }
+                            }
+
+                            .block_myoverview{
+                                .card-body{
+                                    border-radius: 0.5rem;
+                                    border-color: var(--gray-light);
+
+                                    [data-region="is-favourite"]{
+                                        .icon{
+                                            color: var(--main);
+                                        }
+                                    }
+
+                                    .card-text{
+                                        .block-myoverview{
+
+                                            .container-fluid{
+
+                                                .paged-content-page-container{
+                                                    .dashboard-card-deck{
+                                                        .dashboard-card{
+                                                            .dashboard-card-footer{
+                                                                .progress{
+                                                                    background-color: var(--gray-light) !important;
+
+                                                                    .progress-bar{
+                                                                        background-color: var(--alt-dark);
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .course-summaryitem{
+                                                        .progress{
+                                                            background-color: var(--gray-light) !important;
+
+                                                            .progress-bar{
+                                                                background-color: var(--alt-dark);
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .course-listitem{
+                                                        .progress{
+                                                            background-color: var(--gray-light) !important;
+
+                                                            .progress-bar{
+                                                                background-color: var(--alt-dark);
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #page-footer{
-        background-color: $accent-dark !important;
+        background-color: var(--accent-dark) !important;
         padding: 0 !important;
 
         .container{
@@ -164,4 +312,52 @@ a{
             }
         }
     }
+}
+
+#page-login-index{
+    #page-wrapper{
+        #page{
+            background-color: unset !important;
+            #page-content{
+                background-color: unset !important;
+                #region-main-box{
+                    display: flex;
+                    align-items: center;
+
+                    .card{
+                        border-radius: 1rem;
+                        overflow: hidden;
+                        border: none;
+                        .card-block{
+                            .card-header{
+                                background-color: var(--main);
+                                color: var(--white);
+                            }
+                            .card-body{
+                                .icon{
+                                    &::before{
+                                        color: var(--accent-dark) !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-moodlecloud-*/
+#freetrial [data-region="drawer"], #freetrial [data-region="right-hand-drawer"].drawer {
+    top: 110px !important;
+}
+
+body:not(#page-h5p-embed) #freetrial #page{
+    margin-top: 130px !important;
+}
+
+.custom-content-title{
+    background-color: var(--main);
+    color: var(--white);
 }
