@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--style-->
+    <link rel="icon" href="resources/images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--base script-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--container scripts -->
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/structure.js"></script>
+    <script type="text/javascript" src="js/javascript.common.js"></script>
+    <script type="text/javascript" src="js/modalController.js"></script>
+    <!--SCORM scripts-->
+    <script type="text/javascript" src="js/SCORM_API_wrapper_v1.1.6.js"></script>
+    <script type="text/javascript" src="js/scorm.js"></script>
+    <script type="text/javascript" src="js/ScormDataStorage.js"></script>
+    <script type="text/javascript" src="js/resources-data.js"></script>
+</head>
+
+<body onbeforeunload="onExit()">
+
+    <button class="btn btn-primary position-fixed" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Menu
+    </button>
+
+    <!--Slides container-->
+    <div class="container-fluid slideshow-container d-flex flex-grow-1">
+        <div id='slides-container' class='row main-slide current'></div>
+    </div>
+
+    <!--activity modal-->
+    <div class="modal fade activityModal rounded" tabindex="-1" role="dialog" id="activityModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-3 bg-white">
+                    <div class="row justify-content-center ">
+                        <div class="col-12">
+                            <button data-bs-dismiss="modal" class="btn rounded-circle bg-main close" type="button" data-toggle="tooltip" title="Cerrar">
+                                <img class="img-fluid" src="resources/images/btn_modal_close.png">
+                            </button>
+                        </div>
+                        <div class="col-12 text-center msg-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p><b>Contextualización</b></p>
+            <button class="btn btn-secondary mb-3" type="button" onclick="goToSlide([],1)" >
+                Tarjetas
+            </button>
+            <button class="btn btn-secondary mb-3" type="button" onclick="goToSlide([],2)" >
+                Cartas Apiladas
+            </button>
+            <hr>
+            <p><b>Actividades</b></p>
+            <button class="btn btn-secondary mb-3" type="button" onclick="goToSlide([],10)" >
+                Arrastre
+            </button>
+            <button class="btn btn-secondary mb-3" type="button" onclick="goToSlide([],11)" >
+                Completar Texto
+            </button>
+            <button class="btn btn-secondary mb-3" type="button" onclick="goToSlide([],12)" >
+                Verdadero/falso
+            </button>
+            <button class="btn btn-secondary mb-3" type="button" onclick="goToSlide([],13)" >
+                Selección
+            </button>
+            <button class="btn btn-secondary mb-3" type="button" onclick="goToSlide([],14)" >
+                Opción múltiple - única respuesta
+            </button>
+
+        </div>
+    </div>
+
+    <!--default audios-->
+    <audio id="success">
+        <source src="resources/audio/success.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="error">
+        <source src="resources/audio/error.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+<!--postScript-->
+<script src="js/index.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+</html>

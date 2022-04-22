@@ -1,0 +1,44 @@
+/*----------------------------------
+-------------Radio-Activity---------
+------------------------------------*/
+.radio-activity {
+
+    .radio-group-question{
+        p{
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+    }
+
+    .radio-group-options {
+        .form-check{
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+
+            .form-check-input{
+                cursor: pointer;
+                width: 1em;
+                height: 1em;
+
+                border: 2px solid var(--gray) ;
+                &:checked {
+                    border-color: var(--main);
+                    background-color: var(--main);
+                }
+            }
+            .form-check-label{
+                p{
+                    margin-bottom: 0;
+                }
+                 .letter{
+                     color: var(--accent-dark);
+                     font-weight: bold;
+                 }
+            }
+            border-bottom: solid 2px var(--gray-light);
+            &:first-child{
+                border-top: solid 2px var(--gray-light);
+            }
+        }
+    }
+}

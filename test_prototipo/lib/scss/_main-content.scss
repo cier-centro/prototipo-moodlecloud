@@ -1,0 +1,15 @@
+/*----------------------------------
+-------------Main content-----------
+------------------------------------*/
+
+.main-content{
+    main{
+        &.content{
+            .pdf-container{
+                border-radius: 1em;
+                background-color: var(--gray-light);
+                padding: 1em;
+            }
+        }
+    }
+}

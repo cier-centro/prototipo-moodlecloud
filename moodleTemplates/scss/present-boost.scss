@@ -391,4 +391,8 @@ body:not(#page-h5p-embed) #freetrial #page{
 .custom-content-title{
     background-color: var(--main);
     color: var(--white);
+    border-radius: 1rem;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
 }

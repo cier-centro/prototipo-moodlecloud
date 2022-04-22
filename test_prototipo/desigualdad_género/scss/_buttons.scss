@@ -1,0 +1,46 @@
+/*----------------------------------
+----------------Buttons--------------
+------------------------------------*/
+.btn {
+    transition: transform .3s;
+    will-change: transform;
+    font-size: 1em;
+
+    &.btn-primary {
+        background-color: var(--main);
+        color: $white;
+        border: none;
+        &:hover,
+        &:focus{
+            background-color: var(--alt-dark);
+            &.disabled{
+                background-color: var(--gray-light);
+                color: var(--gray-dark);
+            }
+        }
+    }
+
+    &.btn-secondary {
+        background-color: var(--alt-dark);
+        color: $white;
+        border: none;
+        &:hover,
+        &:focus{
+            background-color: var(--accent-dark);
+            &.disabled{
+                background-color: var(--gray-light);
+                color: var(--gray-dark);
+            }
+        }
+    }
+
+    &.disabled{
+        background-color: var(--gray-light);
+        color: var(--gray-dark);
+    }
+
+    &:hover,
+    &:focus{
+         transform: scale(1.05);
+    }
+}
