@@ -1,0 +1,58 @@
+/*----------------------------------
+---------------Variables------------
+------------------------------------*/
+$images-path: "../resources/images/"; //
+$fonts-path: "../resources/fonts/"; //
+// -------------------------------
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --gray-light: #f2f2f2;
+    --gray: #808080;
+    --gray-dark:#333333;
+    /*Nova Color*/
+    --main:#ff4f14;
+    --sec-light:#ece0c6;
+    --sec-dark:#f8c310;
+    --accent-light:#5100e7;
+    --accent-dark-alt:#211842;
+    --accent-dark:#260031;
+    --alt-light: #d9607a;
+    --alt-dark:#c71139;
+}
+
+// Main Colors
+$white: #ffffff !default;
+$black: #000000 !default;
+$gray:#b3b3b3;
+$gray-light:#f2f2f2;
+$gray-dark:#404040;
+
+//Gitei
+$pr-blue-dark:#222E54;
+$pr-blue-light:#00A5D8;
+$sc-purple-dark:#662596;
+$sc-purple-light:#9B5B9F;
+$sc-magenta-dark:#C71C5A;
+$sc-magenta-light:#E13F6E;
+$sc-orange-dark:#DD5335;
+$sc-orange-light:#F38311;
+$sc-green-dark:#276032;
+$sc-green-light:#A5BF33;
+
+//theme
+$main: var(--main);
+$accent: $pr-blue-light;
+$light: $sc-magenta-light;
+$dark: $sc-magenta-dark;
+$light-inv: $sc-orange-light;
+$dark-inv: $sc-orange-dark;
+$neutral:$gray;
+$neutral-light:$gray-light;
+$neutral-dark:$gray-dark;
+
+//Act
+$green-correct: #A5BF33;
+$red-wrong: #E13F6E;
+$correct: rgba($green-correct,0.7);
+$wrong: rgba($red-wrong,0.7);
