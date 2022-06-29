@@ -328,6 +328,49 @@ body {
   padding: 1em;
 }
 
+.content-header {
+  border-bottom: 8px solid #ED1E79;
+}
+.content-header .logo-container {
+  background-color: #173058;
+}
+.content-header .logo-container img {
+  height: 90px;
+}
+.content-header .title-container {
+  background-color: #294065;
+}
+.content-header .title-container h1 {
+  color: #ffffff;
+}
+.content-header .title-container h2 {
+  color: #ffffff;
+}
+
+.content-body .section-container {
+  border-radius: 1em;
+}
+.content-body .section-container .text-box {
+  font-family: "ancizar-light";
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.accordion-button {
+  background-color: #DEEDDC;
+}
+.accordion-button:hover, .accordion-button:focus {
+  background-color: #A5BF33;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #A5BF33;
+  color: #173058;
+}
+.accordion-button:not(.collapsed):hover, .accordion-button:not(.collapsed):focus {
+  background-color: #A5BF33;
+}
+
 /*----------------------------------
 ------------ Flip Cards ------------
 ------------------------------------*/
@@ -731,6 +774,24 @@ body {
 }
 .btn:hover, .btn:focus {
   transform: scale(1.05);
+}
+.btn.btns-nav {
+  background-color: #ED1E79;
+  color: #ffffff;
+  border: none;
+  border-radius: 22px;
+  padding: 6px 22px 4px;
+}
+.btn.btns-nav:hover, .btn.btns-nav:focus {
+  background-color: #C71C5A;
+}
+.btn.btns-nav:hover.disabled, .btn.btns-nav:focus.disabled {
+  background-color: #f2f2f2;
+  color: #404040;
+}
+
+.btns-nav-container {
+  width: 100%;
 }
 
 /*----------------------------------

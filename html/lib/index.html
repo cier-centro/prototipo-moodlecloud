@@ -27,9 +27,29 @@
 
 <body onbeforeunload="onExit()">
 
-    <button class="btn btn-primary position-fixed" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    <!-- <button class="btn btn-primary position-fixed" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         Menu
-    </button>
+    </button> -->
+    <header class="row fixed-top content-header g-0">
+        <div class="col-12 col-md-4 col-lg-3 logo-container py-3 d-flex align-items-center">
+            <img src="resources/images/img_logos.svg" alt="Competencias digitales del estudiante universitario" class="img-fluid d-flex mx-auto">
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 title-container p-3">
+            <h1>¿Cómo nos organizamos?</h1>
+            <h2>Contexto</h2>
+        </div>
+        
+    </header>
+    <nav class="bg-orange-medium text-white py-1 align-items-center row justify-content-center">
+        <div class="d-flex col-11">
+            <h2 class="text-white subtitle_bottom mb-0 px-3">
+                <b>${slideTitle}</b>
+            </h2>
+            <h2 class="text-white subtitle_bottom left-border-white mb-0 px-3">
+                <b>${currentRole}</b>
+            </h2>
+        </div>
+    </nav>
 
     <!--Slides container-->
     <div class="container-fluid slideshow-container d-flex flex-grow-1">
