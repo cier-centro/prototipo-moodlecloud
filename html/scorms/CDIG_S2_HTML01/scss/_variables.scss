@@ -1,0 +1,60 @@
+/*----------------------------------
+---------------Variables------------
+------------------------------------*/
+$images-path: "../resources/images/"; //
+$fonts-path: "../resources/fonts/"; //
+// -------------------------------
+// Main Colors
+$white: #ffffff !default;
+$black: #000000 !default;
+$gray:#b3b3b3;
+$gray-light:#f2f2f2;
+$gray-dark:#404040;
+//Act
+$green-correct: #A5BF33;
+$red-wrong: #E13F6E;
+$correct: rgba($green-correct,0.7);
+$wrong: rgba($red-wrong,0.7);
+
+$green-medium:#A5BF33;
+$blue-dark:#173058;
+$blue-light:#4DAC92;
+
+//Gitei
+$pr-blue-dark:#222E54;
+$pr-blue:#395A8B;
+$pr-blue-light:#00A5D8;
+$sc-purple-dark:#662596;
+$sc-purple-light:#9B5B9F;
+$sc-magenta-dark:#C71C5A;
+$sc-magenta-light:#E13F6E;
+$magenta-medium:#ED1E79;
+$sc-orange-dark:#DD5335;
+$sc-orange-light:#F38311;
+$sc-green-dark:#276032;
+$sc-green-light:#A5BF33;
+$sc-green-soft:#DEEDDC;
+
+//theme
+$main: $pr-blue;
+$accent: $pr-blue-light;
+$light: $sc-magenta-light;
+$dark: $sc-magenta-dark;
+$light-inv: $sc-orange-light;
+$dark-inv: $sc-orange-dark;
+$neutral:$gray;
+$neutral-light:$gray-light;
+$neutral-dark:$gray-dark;
+$logo-background:$blue-dark;
+$header-title-blaground:#294065;
+
+//buttons nav
+$btn-nav:$magenta-medium;
+$acordion-header:$sc-green-soft;
+$ah-not-collapsed:$sc-green-light;
+
+//nuevo comentario
+
+
+
+
