@@ -1,0 +1,54 @@
+/*----------------------------------
+---------------Variables------------
+------------------------------------*/
+$images-path: "../resources/images/"; //
+$fonts-path: "../resources/fonts/"; //
+// -------------------------------
+// Main Colors
+$white: #ffffff;
+$black: #1D1D1B;
+
+$gray: #5c5c5c;
+$gray-light: #f2f2f2;
+$gray-dark: #333333;
+
+$pr-blue-dark: #173058;
+$pr-blue-medium: #294065;
+$pr-blue-semilight: #395A8B;
+$pr-blue-light: #C2DBEE;
+$pr-blue-ultralight: #E7EEF6;
+
+$sc-green-ultralight: #DEEDDC;
+$sc-green-light: #D2E565;
+$sc-green-semilight: #ADC832;
+$sc-green-medium: #4DAC92;
+
+$ac-magenta-medium: #ED1E79;
+$ac-purple-light: #6D478E;
+$ac-purple-dark: #2D2E6F;
+
+//Act
+$green-correct: $sc-green-semilight;
+$red-wrong: $ac-magenta-medium;
+$correct: rgba($green-correct, 0.7);
+$wrong: rgba($red-wrong, 0.7);
+
+//theme
+$main: $pr-blue-semilight;
+$ultralight: $pr-blue-ultralight;
+$light: $pr-blue-light;
+$medium: $pr-blue-medium;
+$dark: $pr-blue-dark;
+
+$accent: $ac-magenta-medium;
+$accent-light: $ac-purple-light;
+$accent-dark: $ac-purple-dark;
+
+$inv-main: $sc-green-semilight;
+$inv-light: $sc-green-light;
+$inv-medium: $sc-green-medium;
+$inv-ultralight: $sc-green-ultralight;
+
+$neutral: $gray;
+$neutral-light: $gray-light;
+$neutral-dark: $gray-dark;

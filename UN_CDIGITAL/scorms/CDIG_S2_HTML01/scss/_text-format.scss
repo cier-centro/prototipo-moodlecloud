@@ -1,0 +1,76 @@
+/*----------------------------------
+--------Text Elements & Format------
+------------------------------------*/
+//text elements
+p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+    strong,
+    b {
+        font-family: 'ancizar-bold';
+    }
+
+    em,
+    i {
+        font-family: 'ancizar-italic';
+    }
+}
+
+small {
+    font-size: 0.7rem;
+}
+
+.bigfont {
+    font-size: 2rem !important;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+a {
+    color: $accent;
+    text-decoration: underline;
+    overflow-wrap: break-word;
+
+    &:hover {
+        color: $accent-dark;
+    }
+}
+
+ul {
+    font-size: 1.25rem;
+
+    li::marker {
+        color: $accent;
+    }
+}
+
+
+ol {
+    font-size: 1.25rem;
+
+    li::marker {
+        font-weight: bold;
+        color: $accent;
+    }
+}
+
+//french-indentation
+.f-dent {
+    margin-left: 1em;
+    text-indent: -1em;
+}

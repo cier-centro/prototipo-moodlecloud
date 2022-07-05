@@ -1,0 +1,92 @@
+/*----------------------------------
+------------ Flip Cards ------------
+------------------------------------*/
+.flipping-cards {
+
+    .flip-card-active {
+        user-select: none;
+        /* 3D effect */
+        perspective: 1000px;
+        cursor: pointer;
+
+        height: 225px;
+
+        @media (min-width: 768px) {
+            height: 275px;
+        }
+
+        @media (min-width: 992px) {
+            height: 225px;
+        }
+
+        @media (min-width: 1200px) {
+            height: 200px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card-back,
+        .flip-card-front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background: $accent-light;
+            border: solid 0.3em $ultralight;
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+            .img-flip {
+                margin: 0 auto;
+            }
+
+            .img-flip-icon {
+                margin: 0 auto;
+                align-self: center;
+            }
+        }
+
+        .flip-card-back {
+            border: solid 0.3em $ultralight;
+            background-color: $white;
+            transform: rotateY(180deg);
+        }
+    }
+
+    /* Giro 180° horizontal */
+    .flip-card-hover:active .flip-card-inner,
+    .flip-card-hover:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    //----------
+    //Voltear cartas click
+    /*.flip-card-active {
+
+    }*/
+    //----------
+    //Bloquear actividad al perder
+    .card-deck {
+        &.disabled {
+            pointer-events: none;
+            opacity: 0.5;
+
+            [id*="card_"] {
+                pointer-events: none;
+            }
+        }
+    }
+
+}

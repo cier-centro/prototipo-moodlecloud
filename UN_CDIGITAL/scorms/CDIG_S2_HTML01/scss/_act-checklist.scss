@@ -1,0 +1,29 @@
+/*----------------------------------
+------------Check-Activity-----------
+------------------------------------*/
+.check-activity {
+
+    .form-check {
+        cursor: pointer;
+        border-bottom: 2px solid $light;
+        padding: 0.5em 2em;
+
+        &:first-child {
+            border-top: 2px solid $light;
+        }
+
+        .form-check-input {
+            border: 2px solid $light;
+            border-radius: 0.1em;
+
+            &:checked {
+                border-color: $accent;
+                background-color: $white;
+                background-image: url("#{$images-path}btn_selected.svg");
+                background-repeat: no-repeat;
+                background-size: 60%;
+                background-position: center;
+            }
+        }
+    }
+}

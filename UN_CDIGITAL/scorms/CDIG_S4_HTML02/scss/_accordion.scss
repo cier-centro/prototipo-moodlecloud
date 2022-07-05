@@ -1,0 +1,44 @@
+.accordion {
+    .accordion-item {
+        .accordion-header {
+            .accordion-button {
+                background-color: $accent-light;
+                color: $white;
+                font-size: 1em;
+
+                p {
+                    margin-bottom: 0 !important;
+                }
+
+                &:hover,
+                &:focus,
+                &:focus-visible {
+                    background-color: $accent-dark;
+                }
+
+                &::after {
+                    background-image: url("#{$images-path}btn_expand.svg");
+                    background-repeat: no-repeat;
+                    background-size: 60%;
+                    background-position: center;
+                }
+            }
+
+            .accordion-button:not(.collapsed) {
+                background-color: $accent-dark;
+
+                &:hover,
+                &:focus-visible {
+                    background-color: $accent-light;
+                }
+            }
+        }
+
+        .accordion-collapse {
+            border: 2px solid $light;
+
+
+        }
+    }
+
+}

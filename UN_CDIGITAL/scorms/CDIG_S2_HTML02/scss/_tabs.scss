@@ -1,0 +1,31 @@
+.tabs {
+
+    .tab-container {
+        border: solid 0.2em $light;
+        border-radius: 0.5em;
+
+        .nav-pills {
+            .nav-link {
+                width: 100%;
+                background-color: $accent-light;
+                padding: 0.5em;
+                color: $white;
+
+                &:not(:last-child) {
+                    margin-bottom: 0.1em;
+                }
+
+                &:hover,
+                &:focus,
+                &:focus-visible {
+                    background-color: $accent-dark;
+                }
+
+                &.active {
+                    background-color: $accent;
+                }
+            }
+        }
+    }
+
+}

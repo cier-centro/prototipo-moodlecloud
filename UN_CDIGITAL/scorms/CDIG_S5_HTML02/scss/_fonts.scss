@@ -1,0 +1,42 @@
+/*----------------------------------
+-----------------Fonts--------------
+------------------------------------*/
+
+//ancizar Sans
+@font-face {
+    font-family: 'ancizar-regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url("#{$fonts-path}ancizar/ancizar-regular.otf");
+}
+
+@font-face {
+    font-family: 'ancizar-italic';
+    font-style: normal;
+    font-weight: 400;
+    src: url("#{$fonts-path}ancizar/ancizar-italic.otf");
+}
+
+//
+@font-face {
+    font-family: 'ancizar-bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url("#{$fonts-path}ancizar/ancizar-bold.otf");
+}
+
+//
+@font-face {
+    font-family: 'ancizar-light';
+    font-style: normal;
+    font-weight: 300;
+    src: url("#{$fonts-path}ancizar/ancizar-light.otf");
+}
+
+//
+@font-face {
+    font-family: 'ancizar-thin';
+    font-style: normal;
+    font-weight: 200;
+    src: url("#{$fonts-path}ancizar/ancizar-thin.otf");
+}

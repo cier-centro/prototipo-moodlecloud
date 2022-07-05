@@ -1,0 +1,91 @@
+/*----------------------------------
+---------------Card-deck------------
+------------------------------------*/
+.card-container {
+
+    .btn-progress {
+        padding: 0;
+        margin-bottom: 0;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        max-width: 50px;
+    }
+
+    .progress {
+        background-color: $ultralight;
+        border-radius: 1rem;
+
+        .progress-bar {
+            background-color: $inv-medium;
+            border-radius: 1rem;
+        }
+    }
+
+    .card-deck {
+        position: relative;
+        min-height: 700px;
+
+        .card-item {
+            width: 100%;
+            background-color: $white;
+            border: 2px solid $light;
+            border-radius: 1rem;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            padding: 1em;
+            min-height: 675px;
+            user-select: none;
+
+            h2 {
+                color: $dark;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .card-container {
+        .card-deck {
+            min-height: 375px;
+
+            .card-item {
+                min-height: 350px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .card-container {
+        .card-deck {
+            min-height: 375px;
+
+            .card-item {
+                min-height: 325px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-container {
+
+        .btn-progress {
+            font-size: 1.5rem;
+        }
+
+        .card-deck {
+            min-height: 300px;
+
+            .card-item {
+                min-height: 275px !important;
+            }
+        }
+    }
+}

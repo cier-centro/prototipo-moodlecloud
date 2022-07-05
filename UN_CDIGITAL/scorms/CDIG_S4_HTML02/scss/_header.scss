@@ -1,0 +1,28 @@
+header {
+    border-bottom: .5em solid rgba($accent-dark, 0.2);
+
+    .logo-container {
+        background-color: $dark;
+
+        img {
+            min-height: 90px;
+        }
+    }
+
+    .title-container {
+        background-color: $medium;
+
+        h1 {
+            color: $white;
+        }
+
+        h2 {
+            color: $white;
+        }
+    }
+
+    @media (min-width: 992px) {
+        border-bottom: 1.5em solid rgba($accent-dark, 0.2);
+    }
+
+}

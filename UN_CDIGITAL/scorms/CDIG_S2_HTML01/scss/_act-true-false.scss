@@ -1,0 +1,71 @@
+/*----------------------------------
+-------True-Or-False-Activity-------
+------------------------------------*/
+
+.true-false-activity {
+
+    [id^="sentence_"] {
+        background-color: #F0F6FB;
+        border-radius: 1em;
+    }
+
+    .sentence {
+        border-radius: 1em;
+        padding: 1em;
+    }
+
+    .signs-container {
+        border-radius: 1em;
+        padding: 1em;
+
+        .letter {
+            color: $dark;
+            font-family: 'ancizar-bold';
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        .answer-sign {
+            cursor: pointer;
+            width: 100%;
+            height: auto;
+
+            &:hover,
+            &:focus {
+                .check-space {
+                    transform: scale(1.1);
+                }
+            }
+
+
+            &.disabled {
+                user-select: none;
+                pointer-events: none;
+                opacity: 0.7;
+            }
+
+            &.true,
+            &.false {
+                .check-space {
+                    height: 2em;
+                    transition: 0.2s all;
+                    background: url("#{$images-path}btn_tf_unselected.png") no-repeat center center/contain;
+                }
+
+                &.selected {
+                    .check-space {
+                        background: url("#{$images-path}btn_tf_selected.png") no-repeat center center/contain;
+
+                        &.correct {
+                            background: url("#{$images-path}btn_tf_success.png") no-repeat center center/contain !important;
+                        }
+
+                        &.incorrect {
+                            background: url("#{$images-path}btn_tf_error.png") no-repeat center center/contain !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
