@@ -43,24 +43,4 @@
     &:focus{
          transform: scale(1.05);
     }
-
-    &.btns-nav{
-        background-color: $btn-nav;
-        color: $white;
-        border: none;
-        border-radius: 22px;
-        padding: 6px 22px 4px;
-        &:hover,
-        &:focus{
-            background-color: $dark;
-            &.disabled{
-                background-color: $neutral-light;
-                color: $neutral-dark;
-            }
-        }
-    }
-}
-
-.btns-nav-container{
-    width: 100%;
 }
