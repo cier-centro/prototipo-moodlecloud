@@ -62,7 +62,7 @@ var slideContent = `
                             <button onclick="goToSlide([],4)" class="btn btn-nav rounded-pill shadow w-100 prev" data-toggle="tooltip" title="Anterior">Anterior</button>
                         </div>
                         <div class="col-5 col-md-3 col-lg-2">
-                            <button onclick="goToSlide([],1)" class="btn btn-nav rounded-pill shadow w-100 next d-none" data-toggle="tooltip" title="Siguiente">Siguiente</button>
+                            <button onclick="goToSlide([],1); parent.window.close()" class="btn btn-nav rounded-pill shadow w-100 next" data-toggle="tooltip" title="Finalizar">Finalizar</button>
                         </div>
                     </nav>
                 </div>

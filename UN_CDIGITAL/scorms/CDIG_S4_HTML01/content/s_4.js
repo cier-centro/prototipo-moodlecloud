@@ -92,7 +92,7 @@ var slideContent = `
                             <button onclick="goToSlide([],3)" class="btn btn-nav rounded-pill shadow w-100 prev" data-toggle="tooltip" title="Anterior">Anterior</button>
                         </div>
                         <div class="col-5 col-md-3 col-lg-2">
-                            <button onclick="goToSlide([],1)" class="btn btn-nav rounded-pill shadow w-100 d-none next" data-toggle="tooltip" title="Siguiente">Siguiente</button>
+                            <button onclick="goToSlide([],1); parent.window.close()" class="btn btn-nav rounded-pill shadow w-100 next" data-toggle="tooltip" title="Finalizar">Finalizar</button>
                         </div>
                     </nav>
                 </div>
@@ -103,19 +103,19 @@ var slideContent = `
 `;
 
 var slideActivityContent = {
-//- Actividad Select -
-controller: "js/activity.select.js",
-//Retroalimentaciones que se muestran al terminar la actividad
-//--CorrectFeedback: Retroalimentación correcta al terminar la actividad
-//--CorrectFeedback: Retroalimentación incorrecta al terminar la actividad
+    //- Actividad Select -
+    controller: "js/activity.select.js",
+    //Retroalimentaciones que se muestran al terminar la actividad
+    //--CorrectFeedback: Retroalimentación correcta al terminar la actividad
+    //--CorrectFeedback: Retroalimentación incorrecta al terminar la actividad
 
-activeRetro: false,
-passiveRetro: true,
+    activeRetro: false,
+    passiveRetro: true,
 
-feedback: [0,
-{
-correctFeedback: [
-`
+    feedback: [0,
+        {
+            correctFeedback: [
+                `
 <div class="row align-items-center justify-content-evenly">
     <div class="col-6 col-md-4">
         <img class="img-fluid mx-auto d-flex" src="${slideImagesPath}img_act_success.png">
@@ -126,9 +126,9 @@ correctFeedback: [
     </div>
 </div>
 `
-],
-incorrectFeedback: [
-`
+            ],
+            incorrectFeedback: [
+                `
 <div class="row align-items-center justify-content-evenly">
     <div class="col-6 col-md-4">
         <img class="img-fluid mx-auto d-flex" src="${slideImagesPath}img_act_error.png">
@@ -138,11 +138,11 @@ incorrectFeedback: [
     </div>
 </div>
 `
-],
-},
-{
-correctFeedback: [
-`
+            ],
+        },
+        {
+            correctFeedback: [
+                `
 <div class="row align-items-center justify-content-evenly">
     <div class="col-6 col-md-4">
         <img class="img-fluid mx-auto d-flex" src="${slideImagesPath}img_act_success.png">
@@ -153,9 +153,9 @@ correctFeedback: [
     </div>
 </div>
 `
-],
-incorrectFeedback: [
-`
+            ],
+            incorrectFeedback: [
+                `
 <div class="row align-items-center justify-content-evenly">
     <div class="col-6 col-md-4">
         <img class="img-fluid mx-auto d-flex" src="${slideImagesPath}img_act_error.png">
@@ -165,11 +165,11 @@ incorrectFeedback: [
     </div>
 </div>
 `
-],
-},
-{
-correctFeedback: [
-`
+            ],
+        },
+        {
+            correctFeedback: [
+                `
 <div class="row align-items-center justify-content-evenly">
     <div class="col-6 col-md-4">
         <img class="img-fluid mx-auto d-flex" src="${slideImagesPath}img_act_success.png">
@@ -180,9 +180,9 @@ correctFeedback: [
     </div>
 </div>
 `
-],
-incorrectFeedback: [
-`
+            ],
+            incorrectFeedback: [
+                `
 <div class="row align-items-center justify-content-evenly">
     <div class="col-6 col-md-4">
         <img class="img-fluid mx-auto d-flex" src="${slideImagesPath}img_act_error.png">
@@ -192,11 +192,11 @@ incorrectFeedback: [
     </div>
 </div>
 `
-],
-},
-{
-correctFeedback: [
-`
+            ],
+        },
+        {
+            correctFeedback: [
+                `
 <div class="row align-items-center justify-content-evenly">
     <div class="col-6 col-md-4">
         <img class="img-fluid mx-auto d-flex" src="${slideImagesPath}img_act_success.png">
@@ -207,9 +207,9 @@ correctFeedback: [
     </div>
 </div>
 `
-],
-incorrectFeedback: [
-`
+            ],
+            incorrectFeedback: [
+                `
 <div class="row align-items-center justify-content-evenly">
     <div class="col-6 col-md-4">
         <img class="img-fluid mx-auto d-flex" src="${slideImagesPath}img_act_error.png">
@@ -219,14 +219,14 @@ incorrectFeedback: [
     </div>
 </div>
 `
-],
-},
-],
+            ],
+        },
+    ],
 
 
-finalFeedback: {
-correctFeedback: [
-`
+    finalFeedback: {
+        correctFeedback: [
+            `
 <div class="row align-items-center justify-content-evenly">
     <div class="col-6 col-md-4">
         <img class="img-fluid mx-auto d-flex" src="${slideImagesPath}img_act_success.png">
@@ -237,9 +237,9 @@ correctFeedback: [
     </div>
 </div>
 `
-],
-incorrectFeedback: [
-`
+        ],
+        incorrectFeedback: [
+            `
 <div class="row align-items-center justify-content-evenly">
     <div class="col-6 col-md-4">
         <img class="img-fluid mx-auto d-flex" src="${slideImagesPath}img_act_error.png">
@@ -250,8 +250,8 @@ incorrectFeedback: [
     </div>
 </div>
 `
-],
-},
+        ],
+    },
 };
 
 isAudioPlayed = false;
@@ -264,7 +264,7 @@ var currentAnswer = new Array(totalSelect);
 var completed = new Array(totalSelect);
 
 $(document).ready(function () {
-currentAnswer.fill(0, 0, totalSelect);
-completed.fill(0, 0, totalSelect);
-scormData.lessonStatus = "completed";
+    currentAnswer.fill(0, 0, totalSelect);
+    completed.fill(0, 0, totalSelect);
+    scormData.lessonStatus = "completed";
 });
