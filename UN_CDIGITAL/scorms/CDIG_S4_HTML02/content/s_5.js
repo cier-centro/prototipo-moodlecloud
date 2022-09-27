@@ -20,7 +20,7 @@ var slideContent = `
                 <div class="col-11 col-lg-10 py-3">
                     <div class="row align-items-center bg-main rounded-top p-3">
                         <div class="col-12 text-center text-white">
-                            <p class="mb-0">La señal de internet de Felipe es intermitente, lo que le impide trabajar simultáneamente de manera adecuada con su compañero y compañeras. Para solucionar este inconveniente se han propuesto las siguientes alternativas, ¿Cuáles son las más apropiadas?</p>
+                            <p class="mb-0">La señal de internet de Felipe es intermitente, lo que le impide trabajar simultáneamente de manera adecuada con su compañero y compañeras. Para evitar que esta situación se convierta en un obstáculo al trabajo en equipo, se proponen varias alternativas. Identifique cuál de ellas es la más apropiada y cuáles las menos apropiadas.</p>
                         </div>
                     </div>
                     <div class="row justify-content-center bg-white rounded-bottom py-3">

@@ -27,7 +27,7 @@ var slideContent = `
                         <div class="col-11">
                             <div class="row">
                                 <div class="col-12 bg-inv-ultralight p-3 rounded">
-                                    <p class="mb-0">De las siguientes opciones selecciona las que mejor justifican la decisión tomada por los integrantes del grupo.</p>
+                                    <p class="mb-0">¿Cuáles de las siguientes opciones justifica la decisión tomada por el equipo?</p>
                                 </div>
                             </div>
                             <div class="row check-activity align-items-center">
