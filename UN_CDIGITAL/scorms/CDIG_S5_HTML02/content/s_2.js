@@ -20,7 +20,7 @@ var slideContent = `
                 <div class="col-11 col-lg-10 py-3">
                     <div class="row align-items-center bg-main rounded-top p-3">
                         <div class="col-12 text-center text-white">
-                            <p class="mb-0">Tatiana, además, debe construir un trabajo escrito. Una de las herramientas más usadas para este propósito es LaTeX, herramienta que permite componer textos atendiendo a aspectos como el formato, la composición de gráficas y estructuración de los documentos. Teniendo en cuenta esto, indica cuáles de las siguientes afirmaciones son falsas y cuáles son verdaderas.</p>
+                            <p class="mb-0">Tatiana debe presentar un trabajo escrito. Para este fin ella puede usar LaTeX, una herramienta que permite componer textos atendiendo a aspectos como el formato, la composición de gráficas y estructuración de los documentos. Teniendo en cuenta las características de LaTex, indica cuáles de las siguientes afirmaciones son falsas y cuál es verdadera.</p>
                         </div>
                     </div>
                     <div class="row justify-content-center bg-white rounded-bottom py-3">
@@ -115,19 +115,19 @@ var slideActivityContent = {
     //--Esta variable solo se llena en la retroalimentación activa y act/pas
     options: [
         {
-            label: "Si el contenido implica gráficas o tablas, ella debería usar esta herramienta para integrarlas a la presentación para luego describirlas en el documento.",
+            label: "Tatiana debe usar esta herramienta para crear gráficas y tablas pensando en las diapositivas de su presentación.",
             answer: "F",
             correctFeedback: [``],
             incorrectFeedback: [``],
         },
         {
-            label: "Si esta herramienta le ayuda a estructurar el documento ella no debería preocuparse por la cohesión de este, pues solo se requiere escribir la información.",
+            label: "Como esta herramienta le ayuda a estructurar el documento, Tatiana no debe preocuparse por la cohesión sino sólo de agregar la información.",
             answer: "F",
             correctFeedback: [``],
             incorrectFeedback: [``],
         },
         {
-            label: "Ahora que ella puede usar esta herramienta para manejar los aspectos tipográficos, solo debe preocuparse de que los aspectos de funcionamiento estén configurados.",
+            label: "Ahora que Tatiana puede usar esta herramienta para manejar los aspectos tipográficos, solo debe preocuparse de que los aspectos de funcionamiento estén configurados.",
             answer: "F",
             correctFeedback: [``],
             incorrectFeedback: [``],

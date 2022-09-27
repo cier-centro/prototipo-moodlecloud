@@ -20,7 +20,7 @@ var slideContent = `
                 <div class="col-11 col-lg-10 py-3">
                     <div class="row align-items-center bg-main rounded-top p-3">
                         <div class="col-12 text-center text-white">
-                            <p class="mb-0">Una buena manera de categorizar la información a presentar en cada uno de los entregables es el uso de uno o varios mapas mentales. De esta manera Tatiana podrá, también, distribuir el tipo de información que va a presentar en cada uno de ellos. ¿Para este caso el uso de pizarras virtuales puede ser una buena alternativa?</p>
+                            <p class="mb-0">Una buena manera de categorizar la información es el uso de uno o varios mapas mentales. ¿El uso de pizarras virtuales puede ser una buena alternativa para la creación y presentación de mapas mentales? Seleccione dos opciones.</p>
                         </div>
                     </div>
                     <div class="row justify-content-center bg-white rounded-bottom py-3">

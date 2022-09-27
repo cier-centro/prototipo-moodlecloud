@@ -20,7 +20,7 @@ var slideContent = `
                 <div class="col-11 col-lg-10 py-3">
                     <div class="row align-items-center bg-main rounded-top p-3">
                         <div class="col-12 text-center text-white">
-                            <p class="mb-0">Tatiana también debe presentar otro tipo de recursos: un <em>flyer</em> y un póster. Para realizarlos, ella puede utilizar la herramienta de Canva, pues esta, además de las posibilidades que tiene para la construcción de presentaciones, cuenta con alternativas para crear este tipo de recursos. De las siguientes opciones, selecciona las que indican aspectos que ella debe tener en cuenta al momento de realizarlos.</p>
+                            <p class="mb-0">Tatiana debe presentar un <em>flyer</em> y un póster. Para realizarlos, ella puede utilizar la herramienta de Canva. De las siguientes opciones, selecciona las que indican aspectos que ella debe tener en cuenta al momento de usar esta herramienta para crear un <em>flyer</em> y póster.</p>
                         </div>
                     </div>
                     <div class="row justify-content-center bg-white rounded-bottom py-3">
@@ -114,8 +114,8 @@ var slideActivityContent = {
                 ``
             ,
             labels: [
-                '<ol type ="a" class="mb-0" start="1"><li>Este tipo de herramientas cuenta con plantillas preestablecidas. Ella no debería implementarlas, puesto que sus estructuras son rígidas.</li></ol>',
-                '<ol type ="a" class="mb-0" start="2"><li>Ella debe tener cuidado en este tipo de recursos con el exceso de gráficas o textos; las plantillas preestablecidas le brindan una guía para hacerlo.</li></ol>',
+                '<ol type ="a" class="mb-0" start="1"><li>Debe evitar usar las plantillas preestablecidas, pues sus estructuras son muy rígidas.</li></ol>',
+                '<ol type ="a" class="mb-0" start="2"><li>Las plantillas preestablecidas le brindan una guía para usar gráficas y textos adecuadamente y evitar el exceso o saturación de información.</li></ol>',
                 '<ol type ="a" class="mb-0" start="3"><li>El uso de imágenes preestablecidas, desarrolladas u obtenidas por ella depende solo de la creatividad y de la claridad de los contenidos expuestos.</li></ol>',
                 '<ol type ="a" class="mb-0" start="4"><li>Tatiana debe evitar usar las imágenes con las que cuentan estas herramientas, puesto que no se relacionan con los temas académicos.</li></ol>',
             ],
