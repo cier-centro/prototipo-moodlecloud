@@ -20,7 +20,7 @@ var slideContent = `
                 <div class="col-11 col-lg-10 py-3">
                     <div class="row align-items-center bg-main rounded-top p-3">
                         <div class="col-12 text-center text-white">
-                            <p class="mb-0">Al momento de realizar la consolidación de la información recopilada, el equipo de trabajo programa una reunión virtual. Lee los siguientes aspectos y selecciona de cada lista desplegable cuáles son los parámetros más apropiados y menos apropiados para optimizar esta reunión.</p>
+                            <p class="mb-0">El equipo de trabajo programa una reunión virtual para llegar a acuerdos sobre cómo consolidar la información recopilada. De los siguientes aspectos identifica cuáles son los más apropiados y cuáles los menos apropiados para optimizar esta reunión.</p>
                         </div>
                     </div>
                     <div class="row justify-content-center bg-white rounded-bottom py-3">
