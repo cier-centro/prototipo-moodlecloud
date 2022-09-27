@@ -20,7 +20,7 @@ var slideContent = `
                 <div class="col-11 col-lg-10 py-3">
                     <div class="row align-items-center bg-main rounded-top p-3">
                         <div class="col-12 text-center text-white">
-                            <p class="mb-0">Ahora que Sebastián ha escogido la herramienta con la cual realizará su presentación, comienza por la integración de las imágenes y características de los materiales poliméricos identificados. Para ello él deberá tener en cuenta algunos aspectos técnicos. De las siguientes opciones selecciona las que describen dos de estos aspectos.</p>
+                            <p class="mb-0">Para realizar su presentación Sebastián debe tener en cuenta algunos aspectos técnicos fundamentales relacionados con el texto y la imagen. ¿Cuáles son los dos aspectos que Sebastián debe tener en cuenta?</p>
                         </div>
                     </div>
                     <div class="row justify-content-center bg-white rounded-bottom py-3">
@@ -115,9 +115,9 @@ var slideActivityContent = {
             ,
             labels: [
                 '<ol type ="a" class="mb-0" start="1"><li>La tipografía que use debe ser clara y los textos concretos, resaltando los aspectos más relevantes del contenido presentado.</li></ol>',
-                '<ol type ="a" class="mb-0" start="2"><li>La tipografía que use debe ser clara y los textos concretos, pero además deben ser generados con algún tipo de animación para que sean dinámicos.</li ></ol>',
-                '<ol type ="a" class="mb-0" start="3"><li>Las imágenes implementadas por él deben tener tonos y colores definidos, pues el propósito es que sean lo más fieles posibles.</li></ol>',
-                '<ol type ="a" class="mb-0" start="4"><li>Las imágenes implementadas por él deben mantener la mejor calidad posible para que los elementos presentados en ellas puedan ser identificados.</li></ol>',
+                '<ol type ="a" class="mb-0" start="2"><li>La tipografía que use debe ser impactante y los textos deben ser animados para dar dinamismo a la presentación.</li ></ol>',
+                '<ol type ="a" class="mb-0" start="3"><li>Las imágenes usadas deben tener tonos y colores definidos, pues el propósito es que sean lo más fieles posibles.</li></ol>',
+                '<ol type ="a" class="mb-0" start="4"><li>Las imágenes usadas deben mantener la mejor calidad posible para que los elementos presentados en ellas puedan ser identificados.</li></ol>',
             ],
             correct: [1, 4],
             correctActiveMessage: ["", ""],

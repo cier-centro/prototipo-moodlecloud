@@ -144,10 +144,10 @@ var slideActivityContent = {
             title: `
 `,
             labels: [
-                '<ol type ="a" class="mb-0" start="1"><li>PowerPoint, pues es la herramienta más conocida y es de fácil manejo, en ella puede generar contenido gráfico, textual y audiovisual básicos, sin tener mayor conocimiento sobre ello.</li></ol>',
-                '<ol type ="a" class="mb-0" start="2"><li>Canva, este programa es de sencillo manejo y permite generar y modificar contenidos, como gráficas y audiovisuales, de manera más dinámica en las presentaciones que se realizan.</li ></ol>',
-                '<ol type ="a" class="mb-0" start="3"><li>Prezi, en esta plataforma él podrá realizar presentaciones dinámicas y creativas, aunque su manejo no es sencillo al principio, además, se puede usar sin restricciones de espacio de manera gratuita.</li></ol>',
-                '<ol type ="a" class="mb-0" start="4"><li>Matlab, este software le brinda la opción de programar y organizar el contenido que debe presentar, es intuitivo y además su uso es gratuito a través del correo institucional de la universidad.</li></ol>',
+                '<ol type ="a" class="mb-0" start="1"><li>PowerPoint, pues es la herramienta más conocida. En ella puede generar contenido gráfico, textual y audiovisual básicos.</li></ol>',
+                '<ol type ="a" class="mb-0" start="2"><li>Canva, pues este programa es de manejo sencillo y permite generar y modificar contenidos gráficos y audiovisuales a partir de plantillas.</li ></ol>',
+                '<ol type ="a" class="mb-0" start="3"><li>Prezi, pues en esta plataforma se pueden realizar presentaciones dinámicas y creativas, aunque su uso no es intuitivo.</li></ol>',
+                '<ol type ="a" class="mb-0" start="4"><li>Matlab, pues este software brinda la opción de programar y organizar el contenido que debe presentar.</li></ol>',
             ],
             correct: 2,
         },
