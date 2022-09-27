@@ -20,7 +20,7 @@ var slideContent = `
                 <div class="col-11 col-lg-10 py-3">
                     <div class="row align-items-center bg-main rounded-top p-3">
                         <div class="col-12 text-center text-white">
-                            <p class="mb-0">Nicolás, Daniela, Jhon y Fernanda han decidido que la mejor manera de distribuir los tiempos para recopilar la información en campo es que cada pareja vaya un día a la semana y al final de semana pongan en común los avances. De las siguientes opciones, ¿cuáles son las más indicadas para la programación de las actividades del equipo?</p>
+                            <p class="mb-0">Nicolás, Daniela, Jhon y Fernanda han decidido que la mejor manera de distribuir los tiempos para recopilar la información en campo es que cada pareja vaya un día a la semana y al final de semana pongan en común los avances. De las siguientes estrategias, ¿cuál es la mejor para que el equipo lleve un control de sus actividades?</p>
                         </div>
                     </div>
                     <div class="row justify-content-center bg-white rounded-bottom py-3">

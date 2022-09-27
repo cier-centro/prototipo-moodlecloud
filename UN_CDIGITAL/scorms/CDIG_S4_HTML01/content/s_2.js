@@ -20,7 +20,7 @@ var slideContent = `
                 <div class="col-11 col-lg-10 py-3">
                     <div class="row align-items-center bg-main rounded-top p-3">
                         <div class="col-12 text-center text-white">
-                            <p class="mb-0">El equipo debe decidir cuál es la herramienta más adecuada para recopilar la información requerida, para lo que cada quien ha propuesto una alternativa. Selecciona la alternativa que corresponde a la mejor opción.</p>
+                            <p class="mb-0">El equipo debe decidir cuál es la mejor manera para recopilar la información necesaria para su trabajo. De las siguientes propuestas y justificaciones selecciona la que mejor responde a las necesidades del equipo.</p>
                         </div>
                     </div>
                     <div class="row justify-content-center bg-white rounded-bottom py-3">
@@ -146,8 +146,8 @@ var slideActivityContent = {
             labels: [
                 '<ol type ="a" class="mb-0" start="1"><li>Jhon propone usar un Excel de google académico que les permita subir información, que después puede modificar otro integrante del equipo.</li></ol>',
                 '<ol type ="a" class="mb-0" start="2"><li>Daniela opina que lo mejor es generar formularios con las herramientas de google, puesto que les permite procesar la información y brinda un acceso compartido.</li ></ol>',
-                '<ol type ="a" class="mb-0" start="3"><li>Fernanda opina que generar formularios con las herramientas de google es la opción más apropiada, puesto que la presentación de la información es más adecuada.</li></ol>',
-                '<ol type ="a" class="mb-0" start="4"><li>Nicolás piensa que la alternativa propuesta por Jhon es mejor, porque esto permite que la información recopilada se mantenga reservada.</li></ol>',
+                '<ol type ="a" class="mb-0" start="3"><li>Fernanda opina que es suficiente con un Excel de trabajo individual, porque esto permite que la información recopilada se mantenga reservada.</li></ol>',
+                '<ol type ="a" class="mb-0" start="4"><li>Nicolás piensa que la mejor alternativa es que cada quien use la herramienta que mejor maneje, porque esto ayuda a avanzar más rápido.</li></ol>',
             ],
             correct: 2,
         },
